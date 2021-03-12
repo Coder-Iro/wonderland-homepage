@@ -1,5 +1,6 @@
 import {createRouter, createWebHistory, RouteRecordRaw, RouterOptions} from "vue-router";
 import Home from "../components/Home.vue"
+import Worldmap from "../components/Worldmap.vue"
 
 const routes: RouteRecordRaw[] = [
     {
@@ -11,6 +12,11 @@ const routes: RouteRecordRaw[] = [
         name: "Home",
         component: Home,
         path: "/home"
+    },
+    {
+        name: "Worldmap",
+        component: Worldmap,
+        path: "/worldmap"
     }
 ]
 
