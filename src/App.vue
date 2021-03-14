@@ -1,6 +1,8 @@
 <template>
   <nav>
-    <router-link id="maintop" to="/home"/>
+    <h1>
+      <router-link id="maintop" to="/home"/>
+    </h1>
     <div class="member">
       <form>
         <label for="userid">ID</label>
@@ -9,17 +11,12 @@
         <input id="password" class="tt" name="password" type="password">
         <span class="button">
           <input class="submit" type="submit" value="로그인">
-          <!--<a href="#" class="icon icon-login">로그인</a>-->
           <a class="icon icon-join" href="/">가입안내</a>
         </span>
       </form>
     </div>
     <ul id="lnb">
-      <router-link custom to="/worldmap" v-slot="{isActive,isExactActive, navigate, href}">
-      <li class="worldmap" :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active']">
-        <a :href="href" @click="navigate">월드맵</a>
-      </li>
-      </router-link>
+      <Navlink clas="worldmap" linkname="월드맵" linkto="/worldmap"/>
     </ul>
   </nav>
   <main>
@@ -29,13 +26,18 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue'
+import Navlink from "./components/Navlink.vue";
 
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  components: {Navlink}
 })
 </script>
 
 <style lang="scss">
+ul, li {
+  list-style: none;
+}
 
 #app {
   height: 100%;
@@ -166,48 +168,6 @@ nav {
   color: #777;
   overflow: auto;
   overflow-x: hidden;
-
-  #lnb li {
-    display: block;
-    height: 35px;
-    background-image: url(assets/lnb-icon.png);
-    background-repeat: no-repeat;
-    border-left: 2px solid #222;
-    a {
-      color: #ddd;
-      padding-left: 37px;
-      line-height: 35px;
-      text-shadow: 2px 2px 5px #000;
-      display: block;
-      height: inherit;
-    }
-  }
-  #lnb li.worldmap {
-    background-position: 7px -293px;
-  }
-  #lnb li.router-link-exact-active {
-    background-color: #111;
-    border-left: 2px solid #f33;
-    font-weight: bold;
-  }
-}
-
-@media (max-width: 700px), (orientation: portrait) {
-  nav {
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-    min-width: inherit;
-    padding: 0;
-
-    #maintop {
-      width: 200px;
-      height: 20px;
-      margin: 8px 3px 3px 3px;
-      background-position: 0 -60px;
-    }
-  }
 }
 
 form .button {
@@ -220,6 +180,85 @@ main {
   position: relative;
   min-height: 100%;
   margin-left: 150px;
+}
+
+@media (max-width: 700px), (orientation: portrait) {
+  nav {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    min-width: inherit;
+    padding: 0;
+
+    h1 {
+      display: inline;
+      float: left;
+      height: 40px;
+
+      a {
+        width: 200px;
+        height: 20px;
+        margin: 8px 3px 3px 3px;
+        background-position: 0 -60px;
+      }
+    }
+
+    .member {
+      width: 250px;
+      height: 22px;
+      text-align: right;
+      padding: 3px 5px;
+      margin: 5px;
+      float: right;
+
+      form {
+        text-align: left;
+        vertical-align: middle;
+      }
+
+      label {
+        display: inline;
+      }
+
+      label, input.tt {
+        height: 15px;
+        margin-top: -5px;
+      }
+
+      .button {
+        float: right;
+        padding: 0;
+      }
+
+      .submit {
+        display: block;
+        float: left;
+      }
+    }
+
+    #maintop {
+      width: 200px;
+      height: 20px;
+      margin: 8px 3px 3px 3px;
+      background-position: 0 -60px;
+    }
+
+    #lnb {
+      clear: both;
+      padding: 0;
+      display: block;
+      height: 110px;
+    }
+
+    input.tt {
+      width: 50px !important;
+    }
+  }
+
+  main {
+    margin-left: 0;
+  }
 }
 
 </style>
