@@ -4,12 +4,8 @@ import Worldmap from "../pages/Worldmap.vue"
 
 const routes: RouteRecordRaw[] = [
     {
-        name: "Root",
-        path: "/",
-        redirect: {name: "Home"}
-    },
-    {
         name: "Home",
+        alias: "/",
         component: Home,
         path: "/home"
     },
