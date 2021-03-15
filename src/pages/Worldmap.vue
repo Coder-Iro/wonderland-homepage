@@ -29,4 +29,11 @@ iframe {
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 700px), (orientation: portrait) {
+  div {
+    top: 150px;
+    margin-bottom: -150px;
+  }
+}
 </style>
