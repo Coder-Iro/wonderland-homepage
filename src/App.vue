@@ -1,31 +1,32 @@
 <template>
   <nav>
     <h1>
-      <router-link id="maintop" to="/home"/>
+      <router-link id="maintop" to="/home" />
     </h1>
-    <MemberForm/>
+    <MemberForm />
     <ul id="lnb">
-      <Navlink clas="worldmap" linkname="월드맵" linkto="/worldmap"/>
+      <Navlink clas="worldmap" linkname="월드맵" linkto="/worldmap" />
     </ul>
   </nav>
   <main>
-    <router-view/>
+    <router-view />
   </main>
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue'
+import { defineComponent } from "vue";
 import Navlink from "./components/Navlink.vue";
 import MemberForm from "./components/MemberForm.vue";
 
 export default defineComponent({
-  name: 'App',
-  components: {MemberForm, Navlink}
-})
+  name: "App",
+  components: { MemberForm, Navlink },
+});
 </script>
 
 <style lang="scss">
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -35,13 +36,20 @@ ul, li {
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // box-sizing: border-box;
 }
 
-a, img, table {
+a,
+img,
+table {
   border: 0;
 }
 
-a, a:hover, a:active, a:visited, a:hover {
+a,
+a:hover,
+a:active,
+a:visited,
+a:hover {
   text-decoration: none;
   line-height: 130%;
   color: #333;
@@ -53,14 +61,31 @@ a, a:hover, a:active, a:visited, a:hover {
   display: inline;
 }
 
-html, body, ul, li, dl, dd, dt, ol, p, img, h1, h2, h3, h4, h5, input, textarea {
+html,
+body,
+ul,
+li,
+dl,
+dd,
+dt,
+ol,
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+textarea {
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-size: 13px;
-  font-family: 'gulim';
+  font-family: "gulim";
   height: 100%;
   min-width: 480px;
   background-color: #f2f2f2;
@@ -103,8 +128,12 @@ main {
 }
 
 @media (max-width: 700px), (orientation: portrait) {
+  html,
+  body {
+    min-width: 0;
+  }
   nav {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     height: 150px;
     overflow: hidden;
@@ -141,7 +170,8 @@ main {
         display: inline;
       }
 
-      label, input.tt {
+      label,
+      input.tt {
         height: 15px;
         margin-top: -5px;
       }
@@ -180,5 +210,4 @@ main {
     margin-left: 0;
   }
 }
-
 </style>
