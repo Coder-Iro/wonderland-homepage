@@ -1,90 +1,72 @@
 <template>
-  <div class="form">
+  <div>
     <form>
-      <div class="block">
-        <label for="userid">ID</label>
-        <input id="userid" name="userid" type="text" />
-      </div>
-      <div class="block">
-        <label for="password">PW</label>
-        <input id="password" name="password" type="password" />
-      </div>
+      <label for="userid">ID</label>
+      <input id="userid" class="tt" name="userid" type="text">
+      <label for="password">PW</label>
+      <input id="password" class="tt" name="password" type="password">
       <span class="button">
-        <input class="submit" type="submit" value="로그인" />
-        <a class="icon icon-join" href="/">가입안내</a>
-      </span>
+          <input class="submit" type="submit" value="로그인">
+          <a class="icon icon-join" href="/">가입안내</a>
+        </span>
     </form>
   </div>
 </template>
 
 <script>
 export default {
-  name: "MemberForm",
-};
+  name: "MemberForm"
+}
 </script>
 
 <style scoped lang="scss">
-.form {
+div {
   width: 120px;
   text-align: center;
   margin: 0 auto 20px auto;
-  padding: 5px 0px;
+  padding: 5px 0;
   border-radius: 5px;
   background-color: #303030;
   position: relative;
 
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 10px;
-    overflow: hidden;
-    .block {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      // justify-content: center;
-    }
+  label, input.tt {
+    height: 15px;
+    line-height: 15px;
+    margin-bottom: 5px;
   }
 
   label {
     display: inline-block;
-    width: 30px;
+    width: 20px;
     text-align: left;
     font-size: 10px;
     font-weight: bold;
     color: #fb5;
-    font-family: "arial";
+    font-family: 'arial';
     text-indent: 3px;
-    margin-right: 3px;
-    flex-shrink: 1;
   }
 
-  input {
-    display: inline-block;
-    width: 100%;
+  input.tt {
+    width: 80px;
     background-color: transparent;
     padding: 2px;
     border: 0;
     border-bottom: 1px dotted #fb5;
     color: #8b5;
-    max-width: 100px;
-  }
-  input:focus {
-    outline: none;
   }
 
   .submit {
-    // display: block;
+    display: block;
     width: 55px;
+    height: 20px;
     background: transparent 0px -448px url(../assets/lnb-icon.png) no-repeat;
     border: 0;
     color: #693;
     font-size: 12px;
-    font-family: "gulim";
+    font-family: 'gulim';
     padding: 5px 0 0 17px;
+    text-align: left;
     margin: auto;
-    cursor: pointer;
   }
 
   .icon {
@@ -96,12 +78,12 @@ export default {
     height: 30px;
     font-size: 12px;
     line-height: 13px;
-    font-family: "gulim";
+    font-family: 'gulim';
   }
 
   .icon-join {
     background-position: 0px -348px;
-    color: #fb5;
+    color: #Fb5;
     width: 50px;
     height: 13px;
     padding: 7px 0 0 18px;
@@ -109,53 +91,38 @@ export default {
 }
 
 @media (max-width: 700px), (orientation: portrait) {
-  .form {
-    width: auto;
+  div {
+    width: 250px;
     height: 22px;
     text-align: right;
     padding: 3px 5px;
     margin: 5px;
-    align-items: center;
     float: right;
-
-    .block {
-      flex: 1;
-      &:last-child {
-        margin-left: 5px;
-      }
-    }
 
     form {
       text-align: left;
       vertical-align: middle;
-      flex-direction: row;
     }
 
     label {
       display: inline;
-      width: 20px;
     }
 
-    label,
-    input.tt {
+    label, input.tt {
       height: 15px;
       margin-top: -5px;
     }
 
     .button {
+      float: right;
       padding: 0;
-      display: flex;
-      align-items: center;
-      margin-left: 10px;
     }
 
     .submit {
       display: block;
       float: left;
     }
-    .icon {
-      width: 1px;
-    }
   }
+
 }
 </style>
