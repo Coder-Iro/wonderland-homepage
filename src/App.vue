@@ -5,7 +5,9 @@
     </h1>
     <MemberForm/>
     <ul id="lnb">
-      <Navlink clas="worldmap" linkname="월드맵" linkto="/worldmap"/>
+      <Navlink code="command">명령어</Navlink>
+      <Navlink code="discord">디스코드</Navlink>
+      <Navlink code="worldmap">월드맵</Navlink>
     </ul>
   </nav>
   <main>
@@ -63,7 +65,6 @@ html, body {
   font-family: 'gulim';
   height: 100%;
   min-width: 480px;
-  background-color: #f2f2f2;
   color: #333;
 }
 
@@ -181,4 +182,17 @@ main {
   }
 }
 
+.box {
+  position: relative;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eaeaea;
+  background: #fcfcfc;
+  border-radius: 5px;
+}
+
+article {
+  position: relative;
+  padding: 30px 50px;
+}
 </style>

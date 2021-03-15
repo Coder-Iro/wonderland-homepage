@@ -1,7 +1,9 @@
 <template>
-  <router-link v-slot="{isActive,isExactActive, navigate, href}" :to="linkto" custom>
-    <li :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active', clas]">
-      <a :href="href" @click="navigate">월드맵</a>
+  <router-link v-slot="{isActive,isExactActive, navigate, href}" :to="'/'+code" custom>
+    <li :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active', code]">
+      <a :href="href" @click="navigate">
+        <slot></slot>
+      </a>
     </li>
   </router-link>
 </template>
@@ -10,9 +12,7 @@
 export default {
   name: "Navlink",
   props: {
-    linkname: String,
-    linkto: String,
-    clas: String
+    code: String
   }
 }
 </script>
@@ -41,8 +41,36 @@ li {
     font-weight: bold;
   }
 
+  &.notice {
+    background-position: 9px 7px
+  }
+
+  &.rules {
+    background-position: 7px -43px
+  }
+
+  &.command {
+    background-position: 7px -93px
+  }
+
+  &.contents {
+    background-position: 7px -143px
+  }
+
+  &.board {
+    background-position: 7px -193px
+  }
+
+  &.market {
+    background-position: 7px -243px
+  }
+
   &.worldmap {
-    background-position: 7px -293px;
+    background-position: 7px -293px
+  }
+
+  &.discord {
+    background-position: 7px -493px
   }
 
 }

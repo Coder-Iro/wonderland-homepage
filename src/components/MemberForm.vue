@@ -1,10 +1,8 @@
 <template>
   <div>
     <form>
-      <label for="userid">ID</label>
-      <input id="userid" class="tt" name="userid" type="text">
-      <label for="password">PW</label>
-      <input id="password" class="tt" name="password" type="password">
+      <label for="userid">ID</label> <input id="userid" class="tt" name="userid" type="text">
+      <label for="password">PW</label> <input id="password" class="tt" name="password" type="password">
       <span class="button">
           <input class="submit" type="submit" value="로그인">
           <a class="icon icon-join" href="/">가입안내</a>
@@ -19,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 div {
   width: 120px;
   text-align: center;
