@@ -9,14 +9,16 @@
             src="https://discordapp.com/widget?id=326393541263753216&theme=dark"
             width="350"></iframe>
   </article>
+  <Footer/>
 </template>
 
 <script>
 import HeaderBar from "../components/HeaderBar.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Discord",
-  components: {HeaderBar}
+  components: {Footer, HeaderBar}
 }
 </script>
 
@@ -24,4 +26,5 @@ export default {
 iframe {
   border: none;
 }
+
 </style>

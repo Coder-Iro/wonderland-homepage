@@ -5,7 +5,11 @@
     </h1>
     <MemberForm/>
     <ul id="lnb">
+      <Navlink code="notice">서버 알림</Navlink>
+      <Navlink code="rules">서버 규칙</Navlink>
       <Navlink code="command">명령어</Navlink>
+      <Navlink code="contents">컨텐츠 사전</Navlink>
+      <Navlink code="board">게시판</Navlink>
       <Navlink code="discord">디스코드</Navlink>
       <Navlink code="worldmap">월드맵</Navlink>
     </ul>
@@ -66,6 +70,7 @@ html, body {
   height: 100%;
   min-width: 480px;
   color: #333;
+  background-color: #f2f2f2;
 }
 
 nav {
@@ -194,5 +199,12 @@ main {
 article {
   position: relative;
   padding: 30px 50px;
+  background: #fff;
+}
+
+@media (max-width: 700px), (orientation: portrait) {
+  article {
+    padding: 30px 20px;
+  }
 }
 </style>

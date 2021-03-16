@@ -35,7 +35,7 @@ li {
     height: inherit;
   }
 
-  &.router-link-exact-active {
+  &.router-link-active {
     background-color: #111;
     border-left: 2px solid #f33;
     font-weight: bold;
