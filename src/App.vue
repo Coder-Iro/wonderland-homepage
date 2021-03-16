@@ -54,7 +54,7 @@ a, a:hover, a:active, a:visited, a:hover {
 }
 
 .icon {
-  background-image: url(assets/icons.gif);
+  background-image: url(assets/img/icons.gif);
   background-repeat: no-repeat;
   display: inline;
 }
@@ -79,7 +79,7 @@ nav {
     width: 120px;
     height: 60px;
     margin: 25px auto 15px auto;
-    background-image: url("assets/home.png");
+    background-image: url("assets/img/home.png");
     text-indent: -999px;
     overflow: hidden;
   }
@@ -208,3 +208,5 @@ article {
   }
 }
 </style>
+
+<style lang="scss" src="./assets/css/color.scss"></style>

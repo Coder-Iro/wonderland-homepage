@@ -22,7 +22,7 @@ li {
   list-style: none;
   display: block;
   height: 35px;
-  background-image: url(../assets/lnb-icon.png);
+  background-image: url(../assets/img/lnb-icon.png);
   background-repeat: no-repeat;
   border-left: 2px solid #222;
 

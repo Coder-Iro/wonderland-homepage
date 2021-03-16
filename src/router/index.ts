@@ -1,5 +1,6 @@
 import {createRouter, createWebHistory, RouteRecordRaw, RouterOptions} from "vue-router";
 import Home from "../pages/Home.vue"
+import Member from "../pages/Member.vue"
 import Rules from "../pages/Rules.vue"
 import Command from "../pages/Command.vue"
 import Discord from "../pages/Discord.vue"
@@ -12,6 +13,11 @@ const routes: RouteRecordRaw[] = [
         alias: "/",
         component: Home,
         path: "/home"
+    },
+    {
+        name: "Member",
+        component: Member,
+        path: "/member"
     },
     {
         name: "Rules",

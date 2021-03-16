@@ -4,9 +4,9 @@
       <label for="userid">ID</label> <input id="userid" class="tt" name="userid" type="text">
       <label for="password">PW</label> <input id="password" class="tt" name="password" type="password">
       <span class="button">
-          <input class="submit" type="submit" value="로그인">
-          <a class="icon icon-join" href="/">가입안내</a>
-        </span>
+        <input class="submit" type="submit" value="로그인">
+        <router-link class="icon icon-join" to="/member">가입안내</router-link>
+      </span>
     </form>
   </div>
 </template>
@@ -57,7 +57,7 @@ div {
     display: block;
     width: 55px;
     height: 20px;
-    background: transparent 0px -448px url(../assets/lnb-icon.png) no-repeat;
+    background: transparent 0px -448px url(../assets/img/lnb-icon.png) no-repeat;
     border: 0;
     color: #693;
     font-size: 12px;
@@ -68,7 +68,7 @@ div {
   }
 
   .icon {
-    background-image: url(../assets/lnb-icon.png);
+    background-image: url(../assets/img/lnb-icon.png);
     overflow: hidden;
     display: inline-block;
     padding-left: 15px;
