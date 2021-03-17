@@ -1164,6 +1164,11 @@ util-deprecate@^1.0.2:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
+uuid@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
+  integrity sha512-DIWtzUkw04M4k3bf1IcpS2tngXEL26YUD2M0tMDUpnUrz2hgzUBlD55a4FjdLGPvfHxS6uluGWvaVEqgBcVa+g==
+
 uuid@^3.3.3:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
@@ -1200,6 +1205,13 @@ vscode-web-custom-data@^0.3.2:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/vscode-web-custom-data/-/vscode-web-custom-data-0.3.3.tgz#9e1f2388c718d6f190038a19d144834a436b876f"
   integrity sha512-orMjjj1r4efP5ocODYZm3orpANakRBsxPZPDoD5UIrFOPKDFtMJQLp6PIH1rb3AYVRD1iYXMhDQoC6tZ+DrigA==
+
+vue-friendly-iframe@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/vue-friendly-iframe/-/vue-friendly-iframe-0.20.0.tgz#36ffa5413fca8d92c62f93f37cf73fc886833aa2"
+  integrity sha512-aspddnbCg3i+tEkknuYwyn7NbpQuRhMMkaXdch+kY1RrAzh+YGXcxL3xCq5lmtfKiV5owG911fEgPEQNkq+tlw==
+  dependencies:
+    uuid "3.1.0"
 
 vue-router@^4.0.5:
   version "4.0.5"
