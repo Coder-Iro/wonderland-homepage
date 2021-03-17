@@ -1,9 +1,11 @@
 <template>
   <nav>
-    <h1>
-      <router-link id="maintop" to="/home"/>
-    </h1>
-    <MemberForm/>
+    <div class="top">
+      <h1>
+        <router-link id="maintop" to="/home" />
+      </h1>
+      <MemberForm />
+    </div>
     <ul id="lnb">
       <Navlink code="notice">서버 알림</Navlink>
       <Navlink code="rules">서버 규칙</Navlink>
@@ -15,23 +17,24 @@
     </ul>
   </nav>
   <main>
-    <router-view/>
+    <router-view />
   </main>
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue'
+import { defineComponent } from "vue";
 import Navlink from "./components/Navlink.vue";
 import MemberForm from "./components/MemberForm.vue";
 
 export default defineComponent({
-  name: 'App',
-  components: {MemberForm, Navlink}
-})
+  name: "App",
+  components: { MemberForm, Navlink },
+});
 </script>
 
 <style lang="scss">
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -43,11 +46,17 @@ ul, li {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-a, img, table {
+a,
+img,
+table {
   border: 0;
 }
 
-a, a:hover, a:active, a:visited, a:hover {
+a,
+a:hover,
+a:active,
+a:visited,
+a:hover {
   text-decoration: none;
   line-height: 130%;
   color: #333;
@@ -59,16 +68,33 @@ a, a:hover, a:active, a:visited, a:hover {
   display: inline;
 }
 
-html, body, ul, li, dl, dd, dt, ol, p, img, h1, h2, h3, h4, h5, input, textarea {
+html,
+body,
+ul,
+li,
+dl,
+dd,
+dt,
+ol,
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+textarea {
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-size: 13px;
-  font-family: 'gulim';
+  font-family: "gulim";
   height: 100%;
-  min-width: 480px;
+  // min-width: 480px;
   color: #333;
   background-color: #f2f2f2;
 }
@@ -117,6 +143,12 @@ main {
     min-width: inherit;
     padding: 0;
 
+    .top {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
     h1 {
       display: inline;
       float: left;
@@ -147,7 +179,8 @@ main {
         display: inline;
       }
 
-      label, input.tt {
+      label,
+      input.tt {
         height: 15px;
         margin-top: -5px;
       }
@@ -178,7 +211,7 @@ main {
     }
 
     input.tt {
-      width: 50px !important;
+      width: 50px;
     }
   }
 
@@ -205,6 +238,13 @@ article {
 @media (max-width: 700px), (orientation: portrait) {
   article {
     padding: 30px 20px;
+  }
+}
+@media (max-width: 460px) {
+  nav {
+    .top {
+      flex-direction: column;
+    }
   }
 }
 </style>

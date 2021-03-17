@@ -1,24 +1,28 @@
 <template>
-  <div>
+  <div class="formWrapper">
     <form>
-      <label for="userid">ID</label> <input id="userid" class="tt" name="userid" type="text">
-      <label for="password">PW</label> <input id="password" class="tt" name="password" type="password">
-      <span class="button">
-        <input class="submit" type="submit" value="로그인">
+      <div class="formInputs">
+        <label for="userid">ID</label>
+        <input id="userid" class="tt" name="userid" type="text" />
+        <label for="password">PW</label>
+        <input id="password" class="tt" name="password" type="password" />
+      </div>
+      <div class="button">
+        <input class="submit" type="submit" value="로그인" />
         <router-link class="icon icon-join" to="/member">가입안내</router-link>
-      </span>
+      </div>
     </form>
   </div>
 </template>
 
 <script>
 export default {
-  name: "MemberForm"
-}
+  name: "MemberForm",
+};
 </script>
 
 <style lang="scss" scoped>
-div {
+.formWrapper {
   width: 120px;
   text-align: center;
   margin: 0 auto 20px auto;
@@ -27,7 +31,12 @@ div {
   background-color: #303030;
   position: relative;
 
-  label, input.tt {
+  .formInputs {
+    display: inline-block;
+  }
+
+  label,
+  input.tt {
     height: 15px;
     line-height: 15px;
     margin-bottom: 5px;
@@ -40,7 +49,7 @@ div {
     font-size: 10px;
     font-weight: bold;
     color: #fb5;
-    font-family: 'arial';
+    font-family: "arial";
     text-indent: 3px;
   }
 
@@ -61,7 +70,7 @@ div {
     border: 0;
     color: #693;
     font-size: 12px;
-    font-family: 'gulim';
+    font-family: "gulim";
     padding: 5px 0 0 17px;
     text-align: left;
     margin: auto;
@@ -76,12 +85,12 @@ div {
     height: 30px;
     font-size: 12px;
     line-height: 13px;
-    font-family: 'gulim';
+    font-family: "gulim";
   }
 
   .icon-join {
     background-position: 0px -348px;
-    color: #Fb5;
+    color: #fb5;
     width: 50px;
     height: 13px;
     padding: 7px 0 0 18px;
@@ -89,7 +98,7 @@ div {
 }
 
 @media (max-width: 700px), (orientation: portrait) {
-  div {
+  .formWrapper {
     width: 250px;
     height: 22px;
     text-align: right;
@@ -106,8 +115,10 @@ div {
       display: inline;
     }
 
-    label, input.tt {
+    label,
+    input.tt {
       height: 15px;
+      width: 60px;
       margin-top: -5px;
     }
 
@@ -120,7 +131,27 @@ div {
       display: block;
       float: left;
     }
-  }
 
+    .icon {
+      width: 1px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .formWrapper {
+    width: calc(100% - 20px);
+    form {
+      display: flex;
+      justify-content: space-between;
+
+      input.tt {
+        width: 90px !important;
+      }
+      .formInputs .button {
+        display: block;
+      }
+    }
+  }
 }
 </style>
