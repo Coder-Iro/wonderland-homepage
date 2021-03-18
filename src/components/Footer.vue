@@ -6,11 +6,11 @@
 
 <script>
 export default {
-name: "Footer"
+  name: "Footer"
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 div {
   height: 10px;
   background: #f2f2f2;

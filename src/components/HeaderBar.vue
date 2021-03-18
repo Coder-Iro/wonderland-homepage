@@ -30,6 +30,7 @@ div {
     text-shadow: 0 0 1px #777;
   }
 }
+
 @media (max-width: 700px), (orientation: portrait) {
   div {
     height: 90px;

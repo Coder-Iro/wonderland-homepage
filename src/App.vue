@@ -2,9 +2,9 @@
   <nav>
     <div class="top">
       <h1>
-        <router-link id="maintop" to="/home" />
+        <router-link id="maintop" to="/home"/>
       </h1>
-      <MemberForm />
+      <MemberForm/>
     </div>
     <ul id="lnb">
       <Navlink code="notice">서버 알림</Navlink>
@@ -17,18 +17,18 @@
     </ul>
   </nav>
   <main>
-    <router-view />
+    <router-view/>
   </main>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import {defineComponent} from "vue";
 import Navlink from "./components/Navlink.vue";
 import MemberForm from "./components/MemberForm.vue";
 
 export default defineComponent({
   name: "App",
-  components: { MemberForm, Navlink },
+  components: {MemberForm, Navlink},
 });
 </script>
 
@@ -240,6 +240,7 @@ article {
     padding: 30px 20px;
   }
 }
+
 @media (max-width: 460px) {
   nav {
     .top {

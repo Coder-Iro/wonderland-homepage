@@ -34,6 +34,7 @@ li {
     display: block;
     height: inherit;
   }
+
   &:hover {
     background-color: #111;
     font-weight: bold;

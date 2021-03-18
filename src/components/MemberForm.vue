@@ -3,12 +3,12 @@
     <form>
       <div class="formInputs">
         <label for="userid">ID</label>
-        <input id="userid" class="tt" name="userid" type="text" />
+        <input id="userid" class="tt" name="userid" type="text"/>
         <label for="password">PW</label>
-        <input id="password" class="tt" name="password" type="password" />
+        <input id="password" class="tt" name="password" type="password"/>
       </div>
       <div class="button">
-        <input class="submit" type="submit" value="로그인" />
+        <input class="submit" type="submit" value="로그인"/>
         <router-link class="icon icon-join" to="/member">가입안내</router-link>
       </div>
     </form>
@@ -31,9 +31,9 @@ export default {
   background-color: #303030;
   position: relative;
 
-  .formInputs {
-    display: inline-block;
-  }
+  //.formInputs {
+  //  display: inline-block;
+  //}
 
   label,
   input.tt {
@@ -141,6 +141,7 @@ export default {
 @media (max-width: 460px) {
   .formWrapper {
     width: calc(100% - 20px);
+
     form {
       display: flex;
       justify-content: space-between;
@@ -148,6 +149,7 @@ export default {
       input.tt {
         width: 90px !important;
       }
+
       .formInputs .button {
         display: block;
       }

@@ -305,6 +305,7 @@ export default {
     padding-left: 250px;
   }
 }
+
 article .page-command {
   max-width: 1000px;
 }
