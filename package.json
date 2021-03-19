@@ -14,6 +14,7 @@
     "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
+    "@types/youtube": "^0.0.42",
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.5",
     "@vuedx/typescript-plugin-vue": "^0.6.3",
