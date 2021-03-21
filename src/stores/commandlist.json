@@ -104,7 +104,7 @@
       {
         "name": "/1 할말",
         "kor": "",
-        "info": "서버 <strong color=\"00a0a0\">&lt;전체&gt;</strong> 의 모든 사람들이 들을 수 있습니다."
+        "info": "서버 <strong class=\"cyan\">&lt;전체&gt;</strong> 의 모든 사람들이 들을 수 있습니다."
       },
       {
         "name": "/2 할말",
@@ -114,22 +114,22 @@
       {
         "name": "/3 할말",
         "kor": "",
-        "info": "내 주변 \u003c지역\u003e 150블록 안의 사람들만 들을 수 있습니다."
+        "info": "내 주변 <strong class=\"green\">&lt;지역&gt;</strong> 150블록 안의 사람들만 들을 수 있습니다."
       },
       {
         "name": "/p 할말",
         "kor": "/ㅔ 할말",
-        "info": "내 \u003c파티\u003e 멤버들만 들을 수 있습니다."
+        "info": "내 <strong class=\"orange\">&lt;파티&gt;</strong> 멤버들만 들을 수 있습니다."
       },
       {
         "name": "/w 아이디 할말",
         "kor": "/ㅈ 아이디 할말",
-        "info": "아이디 에게 \u003c귓속말\u003e 을 합니다."
+        "info": "아이디 에게 <strong class=\"pink\">&lt;귓속말&gt;</strong> 을 합니다."
       },
       {
         "name": "/r 할말",
         "kor": "/ㄱ 할말",
-        "info": "가장 최근에 받은 \u003c귓속말\u003e 에 대한 답장을 합니다."
+        "info": "가장 최근에 받은 <strong class=\"pink\">&lt;귓속말&gt;</strong> 에 대한 답장을 합니다."
       },
       {
         "name": "/mute 아이디",
@@ -185,13 +185,13 @@
       {
         "name": "Space x 2",
         "kor": "",
-        "info": "토지 내에서 비행 모드를 켜거나 끕니다. (초당 마나 5 소모)",
+        "info": "토지 내에서 비행 모드를 켜거나 끕니다. <span style='color: gray;'>(초당 마나 5 소모)</span>",
         "bold": true
       },
       {
         "name": "Shift x 3",
         "kor": "",
-        "info": "건설 모드를 켜거나 끕니다. (웅크리기를 빠르게 3번 누르세요)",
+        "info": "건설 모드를 켜거나 끕니다. <span style='color: gray;'>(웅크리기를 빠르게 3번 누르세요)</span>",
         "bold": true
       },
       {
@@ -202,7 +202,7 @@
       {
         "name": "/purchase",
         "kor": "/구매",
-        "info": "현재 속해있는 토지를 구매합니다. (1,000,000 мега 필요)"
+        "info": "현재 속해있는 토지를 구매합니다. <span style='color: gray;'>(1,000,000 мега 필요)</span>"
       },
       {
         "name": "/list",

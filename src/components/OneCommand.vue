@@ -14,7 +14,7 @@
     <dt v-else :class="{ bold: command.bold }" class="kor">
       {{ command.kor }}
     </dt>
-    <dd v-html="command.info"></dd>
+    <dd v-html="command.info.replace('아이디','<em class=\'id\'>아이디</em>')"></dd>
   </dl>
 </template>
 

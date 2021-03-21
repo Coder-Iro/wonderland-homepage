@@ -3,16 +3,6 @@
   <article>
     <div class="page-command">
       <CommandBox v-for="commands in commandlist" v-once :commands="commands"/>
-      <!--      <div v-for="commands in commandlist" v-once class="box">
-              <h3>{{ commands.title }}</h3>
-              <dl v-for="command in commands.list" :class="{wordwrap: command.wordwrap}">
-                <dt :class="{ bold: command.bold }" v-html="command.name.startsWith('/') ? command.name.split(' ')[0] + '<em>' +command.name.split(' ').slice(1).join(' ')+'</em>':
-                command.name">
-                </dt>
-                <dt :class="{ bold: command.bold }" class="kor">{{ command.kor }}</dt>
-                <dd v-html="command.info"></dd>
-              </dl>
-            </div>-->
     </div>
   </article>
   <Footer/>

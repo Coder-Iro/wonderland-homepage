@@ -248,6 +248,13 @@ article {
     }
   }
 }
+
+em.id {
+  font-style: normal;
+  font-weight: normal;
+  color: #691;
+}
 </style>
 
 <style lang="scss" src="./assets/css/color.scss"></style>
+
