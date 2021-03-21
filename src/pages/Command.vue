@@ -2,12 +2,12 @@
   <HeaderBar>COMMANDS</HeaderBar>
   <article>
     <div class="page-command">
-      <div v-for="(commands, index) in commandlist" :key="index" class="box">
+      <div v-for="commands in commandlist" v-once class="box">
         <h3>{{ commands.title }}</h3>
-        <dl v-for="(command, index) in commands.list" :key="index">
+        <dl v-for="command in commands.list" :class="{wordwrap: command.wordwrap}">
           <dt :class="{ bold: command.bold }">{{ command.name }}</dt>
           <dt class="kor" :class="{ bold: command.bold }">{{ command.kor }}</dt>
-          <dd>{{ command.info }}</dd>
+          <dd v-html="command.info"></dd>
         </dl>
       </div>
     </div>
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { reactive } from "vue";
+import {reactive} from "vue";
 import HeaderBar from "../components/HeaderBar.vue";
 import Footer from "../components/Footer.vue";
 import Commandlist from "../stores/commandlist.json";
