@@ -2,7 +2,7 @@ import {createRouter, createWebHistory, RouteRecordRaw, RouterOptions} from "vue
 import Home from "../pages/Home.vue"
 import Member from "../pages/Member.vue"
 import Rules from "../pages/Rules.vue"
-import Command from "../pages/Command.vue"
+import Command from "../pages/Commands.vue"
 import Discord from "../pages/Discord.vue"
 import Worldmap from "../pages/Worldmap.vue"
 

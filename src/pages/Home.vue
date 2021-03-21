@@ -1,8 +1,8 @@
 <template>
   <HeaderBar>Wonderland Server</HeaderBar>
   <article>
-    <youtube-iframe no-cookie video-id="PgIzZfS9RP0"
-                    :player-parameters="{listType: 'playlist',list:'PL-kUY2NcroAxDrAnUyEaeog7BX8Qj52uh'}"/>
+    <youtube-iframe :player-parameters="{listType: 'playlist',list:'PL-kUY2NcroAxDrAnUyEaeog7BX8Qj52uh'}" no-cookie
+                    video-id="PgIzZfS9RP0"/>
   </article>
   <Footer/>
 </template>
