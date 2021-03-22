@@ -1,8 +1,4 @@
 <template>
-  <Head>
-    <title>Wonderland Server</title>
-    <meta content="Wonderland server" property="og:title"/>
-  </Head>
   <nav>
     <div class="top">
       <h1>
