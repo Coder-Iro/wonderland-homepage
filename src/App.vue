@@ -1,4 +1,8 @@
 <template>
+  <Head>
+    <title>Wonderland Server</title>
+    <meta content="Wonderland server" property="og:title"/>
+  </Head>
   <nav>
     <div class="top">
       <h1>
@@ -28,7 +32,7 @@ import MemberForm from "./components/MemberForm.vue";
 
 export default defineComponent({
   name: "App",
-  components: {MemberForm, Navlink},
+  components: {MemberForm, Navlink}
 });
 </script>
 
@@ -227,6 +231,14 @@ main {
   border: 1px solid #eaeaea;
   background: #fcfcfc;
   border-radius: 5px;
+}
+
+.box-alert {
+  border-color: #E82;
+  background-color: #f5f5f5;
+  font-weight: bold;
+  line-height: 160%;
+  *line-height: 100%;
 }
 
 article {
