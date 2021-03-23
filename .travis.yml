@@ -12,6 +12,7 @@ script:
 - yarn
 - yarn lint
 - yarn generate
+- ls -ahl
 deploy:
   provider: pages
   strategy: git
