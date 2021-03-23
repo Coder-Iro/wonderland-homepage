@@ -13,7 +13,7 @@ script:
 - yarn lint
 - yarn generate
 deploy:
-  provider: pages:git
+  provider: pages
   strategy: git
   edge: true
   fqdn: wonderland.mrsmc.xyz
