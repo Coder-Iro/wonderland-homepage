@@ -2,24 +2,27 @@
   <div>
     <HeaderBar>COMMANDS</HeaderBar>
     <article>
-      <div class="page-command">
+      <div v-once class="page-command">
         <CommandBox
-          v-for="(commands, index) in commandlist"
-          v-once
-          :key="index"
+          v-for="commands in commandlist"
+          :key="commands.title"
           :commands="commands"
         />
       </div>
     </article>
-    <Footer />
+    <FooterBar />
   </div>
 </template>
 
 <script>
+import commandlist from '../assets/data/commandlist.json'
+import CommandBox from '../components/CommandBox'
+
 export default {
   name: 'Command',
-  async asyncData() {
-    return { commandlist: await import('../assets/data/commandlist.json') }
+  components: { CommandBox },
+  data() {
+    return { commandlist }
   },
 }
 </script>

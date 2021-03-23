@@ -4,29 +4,29 @@
     <article>
       <client-only>
         <youtube
-          id='player'
+          id="player"
           :player-vars="{
             listType: 'playlist',
             list: 'PL-kUY2NcroAxDrAnUyEaeog7BX8Qj52uh',
           }"
-          host='https://www.youtube-nocookie.com'
-          player-height='390'
-          player-width='640'
-          video-id='PgIzZfS9RP0'
+          host="https://www.youtube-nocookie.com"
+          player-height="390"
+          player-width="640"
+          video-id="PgIzZfS9RP0"
         />
       </client-only>
-      <div class='bar' />
-      <div class='info'>
-        <div class='section'>
-          <div class='box box-alert'>
+      <div class="bar" />
+      <div class="info">
+        <div class="section">
+          <div class="box box-alert">
             <h3>
               최근알림
-              <router-link to='/notice/'>더보기 &gt;&gt;</router-link>
+              <router-link to="/notice/">더보기 &gt;&gt;</router-link>
             </h3>
-            <div class='str'>
+            <div class="str">
               <br />
-              <strong class='red'
-              ># Wonderland Server Season II 정식 업데이트</strong
+              <strong class="red"
+                ># Wonderland Server Season II 정식 업데이트</strong
               ><br />
               <br />
               - 서버 웹사이트가 리뉴얼 되었습니다.<br />
@@ -43,27 +43,27 @@
               <br />
               - 마인리스트의 서버 홍보 이미지가 변경됐습니다.
             </div>
-            <span class='date'>2020-10-25 15:15:30</span>
+            <span class="date">2020-10-25 15:15:30</span>
           </div>
         </div>
 
-        <div class='section'>
-          <div class='box'>
+        <div class="section">
+          <div class="box">
             <h3>Wonderland Server 소개</h3>
             <dl>
-              <dt><strong class='red'>서버사양</strong></dt>
-              <dd><strong class='green'>OS</strong> 64bit CentOS ver 6.5</dd>
+              <dt><strong class="red">서버사양</strong></dt>
+              <dd><strong class="green">OS</strong> 64bit CentOS ver 6.5</dd>
               <dd>
-                <strong class='green'>CPU</strong> Intel Xeon E3-1230 3.30 GHz
+                <strong class="green">CPU</strong> Intel Xeon E3-1230 3.30 GHz
               </dd>
               <dd>
-                <strong class='green'>RAM</strong> 18GB
-                <strong class='green'>HDD</strong> 500GB
+                <strong class="green">RAM</strong> 18GB
+                <strong class="green">HDD</strong> 500GB
               </dd>
             </dl>
             <dl>
               <dt>접속주소</dt>
-              <dd><strong class='orange'>wonderland-server.net</strong></dd>
+              <dd><strong class="orange">wonderland-server.net</strong></dd>
             </dl>
             <dl>
               <dt>게임버전</dt>
@@ -71,7 +71,7 @@
             </dl>
             <dl>
               <dt>관리자</dt>
-              <dd><strong class='red'>Warak</strong> (1인 관리자)</dd>
+              <dd><strong class="red">Warak</strong> (1인 관리자)</dd>
             </dl>
             <dl>
               <dt>운영시간</dt>
@@ -112,10 +112,10 @@
           </div>
         </div>
 
-        <div class='clear'></div>
+        <div class="clear"></div>
 
-        <div class='section'>
-          <div class='box'>
+        <div class="section">
+          <div class="box">
             <h3>기본설정</h3>
             <ul>
               <li>전체, 월드, 지역, 귓속말로 구분되는 채팅 시스템 지원</li>
@@ -123,31 +123,31 @@
               <li>별도의 경험치 시스템, 마나 시스템 존재</li>
               <li>레벨업을 통해 끌어올릴 수 있는 9개의 특성 존재</li>
               <li>크리퍼 / 엔더맨 / 가스트 / TNT 가 블록에 피해를 주지 않음</li>
-              <li>텔레포트(<span class='green'>/tp</span>) 불가능</li>
+              <li>텔레포트(<span class="green">/tp</span>) 불가능</li>
               <li>
-                <span class='green'>에메랄드</span>를 화폐로 사용하며, 은행계좌
+                <span class="green">에메랄드</span>를 화폐로 사용하며, 은행계좌
                 사용 가능
               </li>
               <li>파티플레이 지원</li>
               <li>치트/테러 방지 시스템 사용</li>
               <li>레벨에 따라 능력치가 증가하는 성장 시스템</li>
               <li>
-                <span class='red'>비 / 눈</span> 이 내리지 않으며
-                <span class='red'>눈 / 얼음</span> 이 녹지 않음
+                <span class="red">비 / 눈</span> 이 내리지 않으며
+                <span class="red">눈 / 얼음</span> 이 녹지 않음
               </li>
               <li>좀비가 나무문을 부수지 못함</li>
             </ul>
           </div>
         </div>
 
-        <div class='section'>
-          <div class='box'>
+        <div class="section">
+          <div class="box">
             <h3>컨텐츠</h3>
             <ul>
               <li>독자적으로 개발된 총기 / 마법 플러그인 존재</li>
               <li>
                 매주 월요일마다 최신버전의 맵으로 리셋되는
-                <span class='red'>Coma</span> 월드 존재
+                <span class="red">Coma</span> 월드 존재
               </li>
               <li>청크(16x16) 별로 토지 구매 가능한 부동산 시스템</li>
               <li>월드에딧 처럼 자동건축을 도와주는 시스템 존재</li>
@@ -161,20 +161,20 @@
           </div>
         </div>
 
-        <div class='clear'></div>
+        <div class="clear"></div>
       </div>
     </article>
-    <Footer />
+    <FooterBar />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
 }
 </script>
 
-<style lang='scss'>
+<style lang="scss">
 .bar {
   border-width: 2px 0 2px 0;
   border-style: solid;
@@ -196,7 +196,7 @@ export default {
 }
 </style>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .info {
   max-width: 900px;
   margin: auto;

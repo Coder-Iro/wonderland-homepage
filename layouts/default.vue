@@ -132,7 +132,7 @@ main {
   nav {
     position: absolute;
     width: 100%;
-    height: 150px;
+    height: 145px;
     overflow: hidden;
     min-width: inherit;
     padding: 0;

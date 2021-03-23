@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <footer>
     <p title="2014.April.Linkey.">Copyright © 2016 wonderland-server.net</p>
-  </div>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'FooterBar',
 }
 </script>
 

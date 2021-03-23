@@ -1,12 +1,10 @@
 <template>
   <div class="formWrapper">
     <form>
-      <div class="formInputs">
-        <label for="userid">ID</label>
-        <input id="userid" class="tt" name="userid" type="text" />
-        <label for="password">PW</label>
-        <input id="password" class="tt" name="password" type="password" />
-      </div>
+      <label for="userid">ID</label>
+      <input id="userid" class="tt" name="userid" type="text" />
+      <label for="password">PW</label>
+      <input id="password" class="tt" name="password" type="password" />
       <div class="button">
         <input class="submit" type="submit" value="로그인" />
         <router-link class="icon icon-join" to="/member">가입안내</router-link>
@@ -118,7 +116,7 @@ export default {
     label,
     input.tt {
       height: 15px;
-      width: 60px;
+      width: 50px;
       margin-top: -5px;
     }
 
@@ -134,6 +132,10 @@ export default {
 
     .icon {
       width: 1px;
+      &.icon-join {
+        margin-left: 5px;
+        color: #303030;
+      }
     }
   }
 }

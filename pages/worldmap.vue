@@ -33,8 +33,8 @@ iframe {
 
 @media (max-width: 700px), (orientation: portrait) {
   div {
-    top: 150px;
-    margin-bottom: -150px;
+    top: 145px;
+    margin-bottom: -145px;
   }
 }
 </style>

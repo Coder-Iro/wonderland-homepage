@@ -1,21 +1,21 @@
 <template>
-  <dl :class='{ wordwrap: command.wordwrap }'>
-    <dt v-if="command.name.startsWith('/')" :class='{ bold: command.bold }'>
+  <dl :class="{ wordwrap: command.wordwrap }">
+    <dt v-if="command.name.startsWith('/')" :class="{ bold: command.bold }">
       {{ command.name.split(' ')[0] }}
       <em>{{ command.name.split(' ').slice(1).join(' ') }}</em>
     </dt>
-    <dt v-else :class='{ bold: command.bold }'>
+    <dt v-else :class="{ bold: command.bold }">
       {{ command.name }}
     </dt>
     <dt
       v-if="command.kor.startsWith('/')"
-      :class='{ bold: command.bold }'
-      class='kor'
+      :class="{ bold: command.bold }"
+      class="kor"
     >
       {{ command.kor.split(' ')[0] }}
       <em>{{ command.kor.split(' ').slice(1).join(' ') }}</em>
     </dt>
-    <dt v-else :class='{ bold: command.bold }' class='kor'>
+    <dt v-else :class="{ bold: command.bold }" class="kor">
       {{ command.kor }}
     </dt>
     <dd
@@ -28,12 +28,12 @@
 export default {
   name: 'OneCommand',
   props: {
-    command: Object
-  }
+    command: Object,
+  },
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 dl {
   border-top: 1px dashed #ccc;
   position: relative;
@@ -82,5 +82,21 @@ dd {
 
 .bold {
   color: #00a0a0;
+}
+
+@media (max-width: 700px), (orientation: portrait) {
+  dt {
+    width: 50%;
+    border: 0;
+
+    &.kor {
+      left: 50%;
+    }
+  }
+  dd {
+    padding-top: 36px;
+    padding-left: 0;
+    text-align: center;
+  }
 }
 </style>
