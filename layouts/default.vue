@@ -1,20 +1,20 @@
 <template>
-  <div id='root'>
+  <div id="root">
     <nav>
-      <div class='top'>
+      <div class="top">
         <h1>
-          <NuxtLink id='maintop' to='/home' />
+          <NuxtLink id="maintop" to="/home" />
         </h1>
         <MemberForm />
       </div>
-      <ul id='lnb'>
-        <Navlink linkname='notice'>서버 알림</Navlink>
-        <Navlink linkname='rules'>서버 규칙</Navlink>
-        <Navlink linkname='command'>명령어</Navlink>
-        <Navlink linkname='contents'>컨텐츠 사전</Navlink>
-        <Navlink linkname='board'>게시판</Navlink>
-        <Navlink linkname='discord'>디스코드</Navlink>
-        <Navlink linkname='worldmap'>월드맵</Navlink>
+      <ul id="lnb">
+        <Navlink linkname="notice">서버 알림</Navlink>
+        <Navlink linkname="rules">서버 규칙</Navlink>
+        <Navlink linkname="command">명령어</Navlink>
+        <Navlink linkname="contents">컨텐츠 사전</Navlink>
+        <Navlink linkname="board">게시판</Navlink>
+        <Navlink linkname="discord">디스코드</Navlink>
+        <Navlink linkname="worldmap">월드맵</Navlink>
       </ul>
     </nav>
     <main>
@@ -23,7 +23,7 @@
   </div>
 </template>
 
-<style lang='scss'>
+<style lang="scss">
 ul,
 li {
   list-style: none;
@@ -258,4 +258,4 @@ em.id {
 }
 </style>
 
-<style lang='scss' src='../assets/css/color.scss'></style>
+<style lang="scss" src="../assets/css/color.scss"></style>

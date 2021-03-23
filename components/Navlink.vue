@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    v-slot='{ isActive, isExactActive, navigate, href }'
+    v-slot="{ isActive, isExactActive, navigate, href }"
     :to="'/' + linkname"
     custom
   >
@@ -11,7 +11,7 @@
         linkname,
       ]"
     >
-      <a :href='href' @click='navigate'>
+      <a :href="href" @click="navigate">
         <slot></slot>
       </a>
     </li>
@@ -22,12 +22,12 @@
 export default {
   name: 'Navlink',
   props: {
-    linkname: String
-  }
+    linkname: String,
+  },
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 li {
   list-style: none;
   display: block;

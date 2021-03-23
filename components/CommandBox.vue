@@ -1,10 +1,10 @@
 <template>
-  <div class='box'>
+  <div class="box">
     <h3>{{ commands.title }}</h3>
     <OneCommand
-      v-for='(command, index) in commands.list'
-      :key='index'
-      :command='command'
+      v-for="(command, index) in commands.list"
+      :key="index"
+      :command="command"
     ></OneCommand>
   </div>
 </template>
@@ -16,12 +16,12 @@ export default {
   name: 'CommandBox',
   components: { OneCommand },
   props: {
-    commands: Object
-  }
+    commands: Object,
+  },
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 div {
   clear: both;
 

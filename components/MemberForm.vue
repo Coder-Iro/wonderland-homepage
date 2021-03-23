@@ -1,15 +1,15 @@
 <template>
-  <div class='formWrapper'>
+  <div class="formWrapper">
     <form>
-      <div class='formInputs'>
-        <label for='userid'>ID</label>
-        <input id='userid' class='tt' name='userid' type='text' />
-        <label for='password'>PW</label>
-        <input id='password' class='tt' name='password' type='password' />
+      <div class="formInputs">
+        <label for="userid">ID</label>
+        <input id="userid" class="tt" name="userid" type="text" />
+        <label for="password">PW</label>
+        <input id="password" class="tt" name="password" type="password" />
       </div>
-      <div class='button'>
-        <input class='submit' type='submit' value='로그인' />
-        <router-link class='icon icon-join' to='/member'>가입안내</router-link>
+      <div class="button">
+        <input class="submit" type="submit" value="로그인" />
+        <router-link class="icon icon-join" to="/member">가입안내</router-link>
       </div>
     </form>
   </div>
@@ -17,11 +17,11 @@
 
 <script>
 export default {
-  name: 'MemberForm'
+  name: 'MemberForm',
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .formWrapper {
   width: 120px;
   text-align: center;

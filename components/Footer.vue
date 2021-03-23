@@ -1,16 +1,16 @@
 <template>
   <div>
-    <p title='2014.April.Linkey.'>Copyright © 2016 wonderland-server.net</p>
+    <p title="2014.April.Linkey.">Copyright © 2016 wonderland-server.net</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 div {
   height: 10px;
   background: #f2f2f2;

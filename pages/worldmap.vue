@@ -1,16 +1,16 @@
 <template>
   <div>
-    <iframe src='http://wonderland-server.net:8124'></iframe>
+    <iframe src="http://wonderland-server.net:8124"></iframe>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Worldmap'
+  name: 'Worldmap',
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 div {
   position: absolute;
   z-index: 2;

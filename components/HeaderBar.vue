@@ -1,5 +1,5 @@
 <template>
-  <div id='h2'>
+  <div id="h2">
     <h2>
       ::
       <slot></slot>
@@ -10,11 +10,11 @@
 
 <script>
 export default {
-  name: 'HeaderBar'
+  name: 'HeaderBar',
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 div {
   position: relative;
   height: 30px;
