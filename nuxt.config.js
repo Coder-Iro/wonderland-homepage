@@ -26,7 +26,11 @@ export default {
         property: 'og:description',
         content: metadata.description,
       },
-      { hid: 'og:image', property: 'og:image', content: metadata.image },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: `${metadata.protocol}://${metadata.domain}${metadata.image}`,
+      },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
@@ -35,7 +39,7 @@ export default {
       {
         hid: 'twitter:domain',
         property: 'twitter:domain',
-        content: `${metadata.protocol}://${metadata.domain}${metadata.image}`,
+        content: metadata.domain,
       },
       { hid: 'twitter:title', name: 'twitter:title', content: metadata.title },
       {
@@ -46,7 +50,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: metadata.image,
+        content: `${metadata.protocol}://${metadata.domain}${metadata.image}`,
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
