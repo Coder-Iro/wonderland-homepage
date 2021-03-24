@@ -22,7 +22,18 @@ export default {
   name: 'Command',
   components: { CommandBox },
   data() {
-    return { commandlist }
+    return {
+      commandlist,
+      url: `http://wonderland.mrsmc.xyz${this.$nuxt.$route.path}`,
+    }
+  },
+  head() {
+    return {
+      meta: [
+        { hid: 'og:url', property: 'og:url', content: this.url },
+        { hid: 'twitter:url', property: 'twitter:url', content: this.url },
+      ],
+    }
   },
 }
 </script>

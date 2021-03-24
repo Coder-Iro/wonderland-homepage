@@ -1,17 +1,53 @@
+import metadata from './metadata.json'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Wonderland Server',
+    title: metadata.title,
     htmlAttrs: {
       lang: 'ko',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { name: 'theme-color', content: '#8F1F32' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: metadata.description,
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:title', property: 'og:title', content: metadata.title },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: metadata.description,
+      },
+      { hid: 'og:image', property: 'og:image', content: metadata.image },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:domain',
+        property: 'twitter:domain',
+        content: 'wonderland.mrsmc.xyz',
+      },
+      { hid: 'twitter:title', name: 'twitter:title', content: metadata.title },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: metadata.description,
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: metadata.image,
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
