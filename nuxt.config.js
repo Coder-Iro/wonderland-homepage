@@ -1,4 +1,4 @@
-import metadata from './metadata.json'
+import metadata from './assets/data/metadata.json'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -35,7 +35,7 @@ export default {
       {
         hid: 'twitter:domain',
         property: 'twitter:domain',
-        content: 'wonderland.mrsmc.xyz',
+        content: `${metadata.protocol}://${metadata.domain}${metadata.image}`,
       },
       { hid: 'twitter:title', name: 'twitter:title', content: metadata.title },
       {

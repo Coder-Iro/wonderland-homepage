@@ -17,6 +17,7 @@
 <script>
 import commandlist from '../assets/data/commandlist.json'
 import CommandBox from '../components/CommandBox'
+import meta from '../assets/data/metadata.json'
 
 export default {
   name: 'Command',
@@ -24,7 +25,8 @@ export default {
   data() {
     return {
       commandlist,
-      url: `http://wonderland.mrsmc.xyz${this.$nuxt.$route.path}`,
+      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
+      title: `명령어 | ${meta.title}`,
     }
   },
   head() {
@@ -32,6 +34,8 @@ export default {
       meta: [
         { hid: 'og:url', property: 'og:url', content: this.url },
         { hid: 'twitter:url', property: 'twitter:url', content: this.url },
+        { hid: 'og:title', property: 'og:title', content: this.title },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.title },
       ],
     }
   },

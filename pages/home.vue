@@ -169,11 +169,12 @@
 </template>
 
 <script>
+import meta from '../assets/data/metadata.json'
 export default {
   name: 'Home',
   data() {
     return {
-      url: `http://wonderland.mrsmc.xyz${this.$nuxt.$route.path}`,
+      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
     }
   },
   head() {

@@ -5,11 +5,13 @@
 </template>
 
 <script>
+import meta from '../assets/data/metadata.json'
 export default {
   name: 'Worldmap',
   data() {
     return {
-      url: `http://wonderland.mrsmc.xyz${this.$nuxt.$route.path}`,
+      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
+      title: `월드맵 | ${meta.title}`,
     }
   },
   head() {
@@ -17,6 +19,8 @@ export default {
       meta: [
         { hid: 'og:url', property: 'og:url', content: this.url },
         { hid: 'twitter:url', property: 'twitter:url', content: this.url },
+        { hid: 'og:title', property: 'og:title', content: this.title },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.title },
       ],
     }
   },
