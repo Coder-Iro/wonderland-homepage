@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
+footer {
   height: 10px;
   background: #f2f2f2;
   text-align: right;

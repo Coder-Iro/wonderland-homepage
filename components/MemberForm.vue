@@ -93,6 +93,9 @@ export default {
     height: 13px;
     padding: 7px 0 0 18px;
   }
+  div.button {
+    padding: 0;
+  }
 }
 
 @media (max-width: 700px), (orientation: portrait) {

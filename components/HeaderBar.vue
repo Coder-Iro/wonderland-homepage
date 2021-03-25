@@ -34,7 +34,7 @@ div {
 
 @media (max-width: 700px), (orientation: portrait) {
   div {
-    height: 90px;
+    height: 84px;
   }
 }
 </style>

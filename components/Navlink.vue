@@ -35,6 +35,7 @@ li {
   background-image: url(../assets/img/lnb-icon.png);
   background-repeat: no-repeat;
   border-left: 2px solid #222;
+  transition: 0.2s;
 
   a {
     color: #ddd;
@@ -46,8 +47,9 @@ li {
   }
 
   &:hover {
+    border-left: 2px solid #f33;
     background-color: #111;
-    font-weight: bold;
+    //font-weight: bold;
   }
 
   &.router-link-active {
@@ -98,6 +100,12 @@ li {
     &.router-link-exact-active {
       border-left: 0;
       background-color: #111;
+    }
+
+    &:hover {
+      border: none;
+      background-color: #111;
+      //font-weight: bold;
     }
 
     a {
