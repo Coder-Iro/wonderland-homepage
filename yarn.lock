@@ -5027,7 +5027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.22.1":
+"eslint-plugin-import@npm:^2.22.1, eslint-plugin-import@npm:latest":
   version: 2.22.1
   resolution: "eslint-plugin-import@npm:2.22.1"
   dependencies:
@@ -12391,6 +12391,7 @@ typescript@~4.2:
     core-js: ^3.9.1
     eslint: ^7.22.0
     eslint-config-prettier: ^8.1.0
+    eslint-plugin-import: latest
     eslint-plugin-nuxt: ^2.0.0
     eslint-plugin-prettier: ^3.3.1
     eslint-plugin-vue: ^7.8.0
