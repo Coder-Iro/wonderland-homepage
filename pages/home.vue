@@ -208,6 +208,45 @@ export default {
     border: 0;
   }
 }
+@media (max-width: 700px), (orientation: portrait) {
+  #player {
+    max-width: 100%;
+    padding: 0;
+  }
+  #player iframe {
+    width: 100%;
+    height: 330px;
+    border: 0;
+  }
+  #player .thumb {
+    width: 100%;
+    position: relative;
+  }
+  #player .thumb h3 {
+    display: none;
+  }
+  #player .thumb ul {
+    padding: 0;
+    width: 100%;
+    height: 115px;
+    white-space: nowrap;
+  }
+  #player .thumb ul li {
+    border: 0;
+    margin: 0;
+    width: 25%;
+    height: 90px;
+    display: inline-block;
+    overflow: hidden;
+  }
+  #player .thumb ul img {
+    width: 100%;
+  }
+  #player .thumb ul .title,
+  #player .thumb ul .date {
+    display: none;
+  }
+}
 </style>
 
 <style lang="scss" scoped>
@@ -287,6 +326,16 @@ export default {
         display: block;
         color: #47a;
       }
+    }
+  }
+}
+@media (max-width: 700px), (orientation: portrait) {
+  .info {
+    .section {
+      width: 100%;
+    }
+    .box {
+      margin-right: 0;
     }
   }
 }

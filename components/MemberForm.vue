@@ -29,10 +29,6 @@ export default {
   background-color: #303030;
   position: relative;
 
-  //.formInputs {
-  //  display: inline-block;
-  //}
-
   label,
   input.tt {
     height: 15px;
@@ -107,57 +103,50 @@ export default {
     margin: 5px;
     float: right;
 
+    strong {
+      float: left;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      display: inline;
+      margin: 0;
+      float: left;
+    }
+    .icon-myinfo,
+    .icon-logout {
+      height: 14px;
+      width: 50px;
+      padding-top: 6px;
+    }
+
     form {
       text-align: left;
       vertical-align: middle;
     }
-
     label {
       display: inline;
     }
-
+    input.tt {
+      width: 50px;
+    }
     label,
     input.tt {
       height: 15px;
-      width: 50px;
       margin-top: -5px;
     }
-
     .button {
       float: right;
       padding: 0;
     }
-
     .submit {
       display: block;
       float: left;
     }
-
-    .icon {
+    .icon-join {
       width: 1px;
-      &.icon-join {
-        margin-left: 5px;
-        color: #303030;
-      }
-    }
-  }
-}
-
-@media (max-width: 460px) {
-  .formWrapper {
-    width: calc(100% - 20px);
-
-    form {
-      display: flex;
-      justify-content: space-between;
-
-      input.tt {
-        width: 90px !important;
-      }
-
-      .formInputs .button {
-        display: block;
-      }
+      margin-left: 5px;
+      color: #303030;
     }
   }
 }

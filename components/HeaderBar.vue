@@ -1,11 +1,11 @@
 <template>
-  <div id="h2">
+  <header>
     <h2>
       ::
       <slot></slot>
       ::
     </h2>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
+header {
   position: relative;
   height: 30px;
   background: #f2f2f2;
@@ -33,7 +33,7 @@ div {
 }
 
 @media (max-width: 700px), (orientation: portrait) {
-  div {
+  header {
     height: 84px;
   }
 }

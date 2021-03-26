@@ -1,12 +1,10 @@
 <template>
   <div id="root">
     <nav>
-      <div class="top">
-        <h1>
-          <NuxtLink id="maintop" to="/home" />
-        </h1>
-        <MemberForm />
-      </div>
+      <h1>
+        <NuxtLink id="maintop" to="/home" />
+      </h1>
+      <MemberForm />
       <ul id="lnb">
         <Navlink linkname="notice">서버 알림</Navlink>
         <Navlink linkname="rules">서버 규칙</Navlink>
@@ -153,40 +151,6 @@ main {
         height: 20px;
         margin: 8px 3px 3px 3px;
         background-position: 0 -60px;
-      }
-    }
-
-    .member {
-      width: 250px;
-      height: 22px;
-      text-align: right;
-      padding: 3px 5px;
-      margin: 5px;
-      float: right;
-
-      form {
-        text-align: left;
-        vertical-align: middle;
-      }
-
-      label {
-        display: inline;
-      }
-
-      label,
-      input.tt {
-        height: 15px;
-        margin-top: -5px;
-      }
-
-      .button {
-        float: right;
-        padding: 0;
-      }
-
-      .submit {
-        display: block;
-        float: left;
       }
     }
 
