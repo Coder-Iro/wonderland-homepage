@@ -60,7 +60,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/youtube.client.ts'],
+  plugins: ['~/plugins/youtube.client.ts', '~/plugins/toast-editor.client.ts'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

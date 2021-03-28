@@ -16,7 +16,7 @@
       </ul>
     </nav>
     <main>
-      <router-view />
+      <Nuxt />
     </main>
   </div>
 </template>
