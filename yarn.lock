@@ -9039,10 +9039,10 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
-vue-iframes@^0.0.15:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/vue-iframes/-/vue-iframes-0.0.15.tgz#3117fb2f6e6e3c507e0fd77496eaff8a0157dc1d"
-  integrity sha512-Q+SPJP8dazvXfpL5d81ZOqUF/GkzlM0kS7p2IY8mPI1TJRgt9viWtE59Et4yXW9HIQS7FylsfqTVDPzJU0XNng==
+vue-iframes@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/vue-iframes/-/vue-iframes-0.0.16.tgz#96c847cf17e47305e23ab515e58c28555badedc4"
+  integrity sha512-/PndiRSizD8Wh9IQlxNopBbL2F38ZA7cTr+OlvbtLr3wCxpN95v8SuMPSfsHnTyXlr3/+z/4RWyda6uWtQSv1g==
   dependencies:
     lodash.debounce "^4.0.8"
     uuid "7.0.1"
