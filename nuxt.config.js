@@ -60,7 +60,11 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/youtube.client.ts', '~/plugins/toast-editor.client.ts'],
+  plugins: [
+    '~/plugins/youtube.client.ts',
+    '~/plugins/toast-editor.client.ts',
+    '~/plugins/toast-grid.client.ts',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -75,7 +79,12 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap'
   ],
+  // Sitemap module configuration: https://sitemap.nuxtjs.org/guide/configuration
+  sitemap: {
+    hostname: 'wonderland.mrsmc.xyz'
+  }
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
