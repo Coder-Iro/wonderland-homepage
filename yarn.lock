@@ -1480,12 +1480,12 @@
   dependencies:
     "@toast-ui/editor" "^2.5.2"
 
-"@toast-ui/vue-grid@^4.17.0":
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/@toast-ui/vue-grid/-/vue-grid-4.17.0.tgz#3e3084e949b76a83f619ea0059c5ff14ac988bcd"
-  integrity sha512-RYZ1YTxOx/DKK7tA/JRcR2Uef3hhMYgJN/DSAd4m3BXj0DZCGcThwU1ztd2/4JoZ3uqyjiof7LWfXN3vsGJemQ==
+"@toast-ui/vue-grid@^4.17.2":
+  version "4.17.2"
+  resolved "https://registry.yarnpkg.com/@toast-ui/vue-grid/-/vue-grid-4.17.2.tgz#2bcafb8ea38bcd260beea5d7dd16c242ace1988e"
+  integrity sha512-Y6TxLeZYlp6C0h/Wdky7lHfrdiMjWkHaHY1HWFXh2ZO7Fe+IHZsMuHiNiYfHiZCMB2qeBlDmSl8P8bZArn8FPw==
   dependencies:
-    tui-grid "^4.17.0"
+    tui-grid "^4.17.2"
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -8856,10 +8856,10 @@ tui-date-picker@^4.1.0:
   dependencies:
     tui-time-picker "^2.0.3"
 
-tui-grid@^4.17.0:
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/tui-grid/-/tui-grid-4.17.0.tgz#3322346f8100e1073d7378a157e992b746a48c8d"
-  integrity sha512-Y5fzy1TP9h6+Ymej07w1cams34w2zlKr2qe5/3O0R1hGtLjLH84ZRocxq82b4BWk+C3p0LOVLmBdc2OoweKcCg==
+tui-grid@^4.17.2:
+  version "4.17.2"
+  resolved "https://registry.yarnpkg.com/tui-grid/-/tui-grid-4.17.2.tgz#57add0336b0f2bd436451b635d0919be9ad88f0d"
+  integrity sha512-tVMs0m8duHZ+SCFVJM+XHMgS0gSWqUaRiasWJ4nPJ9V9NstUVm08vqMDzdXrpMLqyroLS2rwfLIIt2MPYmIzfA==
   dependencies:
     tui-date-picker "^4.1.0"
     tui-pagination "^3.4.0"
