@@ -54,13 +54,14 @@
             <h3>Wonderland Server 소개</h3>
             <dl>
               <dt><strong class="red">서버사양</strong></dt>
-              <dd><strong class="green">OS</strong> 64bit CentOS ver 6.5</dd>
+              <dd><strong class="green">OS</strong> Ubuntu 20.04 64bit</dd>
               <dd>
-                <strong class="green">CPU</strong> Intel Xeon E3-1230 3.30 GHz
+                <strong class="green">CPU</strong> Intel Xeon E-2136 3.30 GHz
               </dd>
               <dd>
-                <strong class="green">RAM</strong> 18GB
-                <strong class="green">HDD</strong> 500GB
+                <strong class="green">RAM</strong> 32GB
+                <strong class="green">SSD</strong> 250GB
+                <strong class="green">HDD</strong> 250GB
               </dd>
             </dl>
             <dl>
@@ -89,7 +90,7 @@
             </dl>
             <dl>
               <dt>수용인원</dt>
-              <dd>40명</dd>
+              <dd>80명</dd>
             </dl>
             <dl>
               <dt>월드</dt>
@@ -146,7 +147,7 @@
           <div class="box">
             <h3>컨텐츠</h3>
             <ul>
-              <li>독자적으로 개발된 총기 / 마법 플러그인 존재</li>
+              <li>독자적으로 개발된 총기 / 기술 / 마법 존재</li>
               <li>
                 매주 월요일마다 최신버전의 맵으로 리셋되는
                 <span class="red">Coma</span> 월드 존재
@@ -159,6 +160,7 @@
               <li>PvE 지역 점령 및 방어전 플레이 가능</li>
               <li>아이템 분해 및 제련 시스템 존재</li>
               <li>매번 다르게 공략해야 하는 독자적인 던전 시스템 존재</li>
+              <li>각종 형상변환과 비행탈것 등 꾸미기 요소</li>
             </ul>
           </div>
         </div>
