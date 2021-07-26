@@ -2,14 +2,15 @@
   <div class="box">
     <h3>{{ commands.title }}</h3>
     <OneCommand
-      v-for="(command, index) in commands.list"
+      v-for="(command, index) in commands.items"
       :key="index"
       :command="command"
     />
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { CommandGroup } from 'assets/data/commands'
 import OneCommand from './OneCommand.vue'
 
 export default {
@@ -17,7 +18,7 @@ export default {
   components: { OneCommand },
   props: {
     commands: {
-      type: Object,
+      type: Object as () => CommandGroup,
       required: true
     }
   }

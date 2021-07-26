@@ -98,7 +98,7 @@ body,
 #__layout,
 #root {
   font-size: 13px;
-  font-family: 'gulim';
+  font-family: 'gulim',serif;
   height: 100%;
   // min-width: 480px;
   color: #333;
@@ -141,6 +141,9 @@ main {
 }
 
 @media (max-width: 700px), (orientation: portrait) {
+  #root {
+    min-width: 480px;
+  }
   nav {
     position: absolute;
     width: 100%;

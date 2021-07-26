@@ -1,19 +1,21 @@
 
 <template>
   <!--eslint-disable vue/no-v-html-->
-  <dl :class="{ wordwrap: command.wordwrap }">
-    <dt :class="{ ctrl: command.ctrl}" v-html="command.name" />
-    <dt v-if="!command.ctrl" class="kor" v-html="command.kor" />
-    <dd v-html="command.info.replace('아이디', '<em class=\'id\'>아이디</em>')" />
+  <dl>
+    <dt :class="{ big: !command.kor}" v-html="command.name" />
+    <dt v-if="command.kor" class="kor" v-html="command.kor" />
+    <dd v-html="command.desc" />
   </dl>
 </template>
 
-<script>
+<script lang="ts">
+import { Command } from '~/assets/data/commands'
+
 export default {
   name: 'OneCommand',
   props: {
     command: {
-      type: Object,
+      type: Object as () => Command,
       required: true
     }
   }
@@ -62,7 +64,7 @@ dt {
     left: 150px;
   }
 
-  &.ctrl {
+  &.big {
     width: 300px;
   }
 }
@@ -78,6 +80,10 @@ dd {
 
     &.kor {
       left: 50%;
+    }
+
+    &.big {
+      width: 100%;
     }
   }
   dd {

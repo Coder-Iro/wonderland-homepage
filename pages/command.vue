@@ -4,9 +4,9 @@
     <article>
       <div v-once class="page-command">
         <CommandBox
-          v-for="commands in commandlist"
-          :key="commands.title"
-          :commands="commands"
+          v-for="commandgroup in commands"
+          :key="commandgroup.title"
+          :commands="commandgroup"
         />
       </div>
     </article>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import commandlist from '../assets/data/commandlist.json'
+import { commands } from 'assets/data/commands.ts'
 import CommandBox from '../components/CommandBox'
 import meta from '../assets/data/metadata.json'
 
@@ -24,7 +24,7 @@ export default {
   components: { CommandBox },
   data () {
     return {
-      commandlist,
+      commands,
       url: `https://${meta.domain}${this.$nuxt.$route.path}`,
       title: `명령어 | ${meta.title}`
     }
