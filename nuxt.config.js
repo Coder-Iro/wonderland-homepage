@@ -1,4 +1,4 @@
-import meta from 'assets/data/metadata.json'
+import meta from './assets/data/metadata.json'
 // noinspection JSUnusedGlobalSymbols
 export default {
   target: 'static',
