@@ -4,11 +4,12 @@
 
 <script>
 import meta from '../assets/data/metadata.json'
+
 export default {
   name: 'Notice',
   data () {
     return {
-      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
+      url: `https://${meta.domain}${this.$nuxt.$route.path}`,
       title: `서버 알림 | ${meta.title}`
     }
   },

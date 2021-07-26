@@ -10,7 +10,7 @@
         />
       </div>
     </article>
-    <FooterBar/>
+    <FooterBar />
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       contents,
-      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
+      url: `https://${meta.domain}${this.$nuxt.$route.path}`,
       title: `컨텐츠 사전 | ${meta.title}`
     }
   },

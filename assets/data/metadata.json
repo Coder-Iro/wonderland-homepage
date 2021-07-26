@@ -3,6 +3,5 @@
   "theme-color": "#8F1F32",
   "description": "Wonderland Server Season II\n\n2013~2018 5년동안의 Season I 데이터를\n모두 리뉴얼하고 새로 디자인된 스토리형 RPG 서버",
   "image": "/thumbnail.png",
-  "protocol": "http",
-  "domain": "wonderland.mrsmc.xyz"
+  "domain": "wonderland-server.pages.dev"
 }

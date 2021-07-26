@@ -19,11 +19,12 @@
 
 <script>
 import meta from '../assets/data/metadata.json'
+
 export default {
   name: 'Discord',
   data () {
     return {
-      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
+      url: `https://${meta.domain}${this.$nuxt.$route.path}`,
       title: `디스코드 | ${meta.title}`
     }
   },

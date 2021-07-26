@@ -107,11 +107,12 @@
 
 <script>
 import meta from '../assets/data/metadata.json'
+
 export default {
   name: 'Rules',
   data () {
     return {
-      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
+      url: `https://${meta.domain}${this.$nuxt.$route.path}`,
       title: `서버 규칙 | ${meta.title}`
     }
   },

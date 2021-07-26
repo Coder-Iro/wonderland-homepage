@@ -4,11 +4,12 @@
 
 <script>
 import meta from '../assets/data/metadata.json'
+
 export default {
   name: 'Member',
   data () {
     return {
-      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
+      url: `https://${meta.domain}${this.$nuxt.$route.path}`,
       title: `가입안내 | ${meta.title}`
     }
   },

@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       commandlist,
-      url: `${meta.protocol}://${meta.domain}${this.$nuxt.$route.path}`,
+      url: `https://${meta.domain}${this.$nuxt.$route.path}`,
       title: `명령어 | ${meta.title}`
     }
   },
