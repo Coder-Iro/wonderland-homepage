@@ -1,7 +1,7 @@
 import meta from './assets/data/metadata.json'
 // noinspection JSUnusedGlobalSymbols
 export default {
-  target: 'static',
+  // target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: meta.title,
@@ -114,5 +114,8 @@ export default {
   sitemap: {
     hostname: `https://${meta.domain}`,
     gzip: true
-  }
+  },
+  serverMiddleware: [
+    { path: '/api', handler: '~/backend/index.ts' }
+  ]
 }
