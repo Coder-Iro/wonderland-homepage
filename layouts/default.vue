@@ -2,7 +2,7 @@
   <div id="root">
     <nav>
       <h1>
-        <NuxtLink id="maintop" to="/home" />
+        <NuxtLink id="maintop" to="/" />
       </h1>
       <MemberForm />
       <ul id="lnb">

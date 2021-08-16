@@ -90,6 +90,11 @@ export default {
     '~/plugins/youtube.client.ts'
   ],
 
+  render: {
+    http2: {
+      push: true
+    }
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -103,6 +108,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/redirect-module',
     '@nuxtjs/sitemap'
   ],
 
@@ -115,7 +121,12 @@ export default {
     hostname: `https://${meta.domain}`,
     gzip: true
   },
+
   serverMiddleware: [
     { path: '/api', handler: '~/backend/index.ts' }
+  ],
+
+  redirect: [
+    { from: '^/home', to: '/', statusCode: 301 }
   ]
 }
