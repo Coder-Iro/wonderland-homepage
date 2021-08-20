@@ -4,8 +4,7 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["backend/**","assets/data/metadata.json"],
-        "internalServer": true
+        "serverFiles": ["backend/**","assets/data/metadata.json"]
       }
     }
   ]
