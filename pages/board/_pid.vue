@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import meta from '../assets/data/metadata.json'
+import meta from '@/assets/data/metadata.json'
 
 export default {
   name: 'Board',
@@ -29,8 +29,12 @@ export default {
     return {
       url: `https://${meta.domain}${this.$nuxt.$route.path}`,
       title: `게시판 | ${meta.title}`,
-      posts: this.posts
+      posts: this.posts,
+      page: this.$route.params.pid ? this.$route.params.pid : '1'
     }
+  },
+  async fetch () {
+    this.posts = await this.$axios.$get('/api/posts')
   },
   head () {
     return {
@@ -57,9 +61,6 @@ export default {
         }
       ]
     }
-  },
-  async created () {
-    this.posts = await this.$axios.$get('http://localhost:3000/api/posts')
   }
 }
 </script>
