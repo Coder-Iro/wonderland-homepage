@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderBar>BOARD</HeaderBar>
-    <article v-if="!isNaN(page) && page >= 1">
+    <article v-if="page >= 1">
       <table>
         <caption>1 페이지</caption>
         <BoardHead />
