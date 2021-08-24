@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderBar>BOARD</HeaderBar>
-    <article v-if="!isNaN(page)">
+    <article v-if="!isNaN(page) && page >= 1">
       <table>
         <caption>1 페이지</caption>
         <BoardHead />
@@ -47,7 +47,7 @@ import BoardHead from '~/components/BoardHead'
 export default {
   name: 'Board',
   components: { BoardHead, BoardItem, FakeBoardItem },
-  fetchOnServer: false,
+  // fetchOnServer: false,
   data () {
     return {
       url: `https://${meta.domain}${this.$nuxt.$route.path}`,
