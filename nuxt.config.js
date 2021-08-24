@@ -95,6 +95,9 @@ export default {
       push: true
     }
   },
+  server: {
+    socket: '/tmp/nuxt.socket'
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
