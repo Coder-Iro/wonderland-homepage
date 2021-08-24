@@ -24,10 +24,10 @@
       <div id="paging">
         <ul id="left">
           <li v-if="page !== 1">
-            <a>1</a>
+            <NuxtLink to="/board/1">1</NuxtLink>
           </li>
         </ul>
-        <span v-for="(pag, index) in paging" :key="index" :class="{border: index === 0}"><a>{{ pag }}</a></span>
+        <span v-for="(pag, index) in paging" :key="index" :class="{border: index === 0}"><NuxtLink :to="`/board/${pag}`">{{ pag }}</NuxtLink></span>
       </div>
       <form id="search_form" name="search_form">
         <input id="search_box" type="text" name="filter" placeholder="제목, 내용, ID 검색">
