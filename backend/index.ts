@@ -1,5 +1,6 @@
 import express from 'express'
 import axios from 'axios'
+// import mariadb from 'mariadb'
 
 interface PostTitle {
   pid: number,
@@ -27,7 +28,6 @@ app.get('/posts', async (_, res) => {
   for (const post of posts) {
     post.username = (await axios.get(`https://sessionserver.mojang.com/session/minecraft/profile/${post.uuid}`)).data.name
   }
-  // setTimeout(() => res.send(posts), 5000)
   res.send(posts)
 })
 

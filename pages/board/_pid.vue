@@ -24,7 +24,9 @@
       <div id="paging">
         <ul id="left">
           <li v-if="page !== 1">
-            <NuxtLink to="/board/1">1</NuxtLink>
+            <NuxtLink to="/board/1">
+              1
+            </NuxtLink>
           </li>
         </ul>
         <span v-for="(pag, index) in paging" :key="index" :class="{border: index === 0}"><NuxtLink :to="`/board/${pag}`">{{ pag }}</NuxtLink></span>
