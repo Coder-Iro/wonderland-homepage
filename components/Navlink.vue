@@ -1,13 +1,8 @@
 <template>
-  <nuxt-link
-    v-slot="{ isActive, isExactActive, navigate, href }"
-    :to="'/' + linkname"
-    custom
-  >
+  <nuxt-link v-slot="{ navigate, href }" :to="`/${linkname}`" custom>
     <li
       :class="[
-        isActive && 'router-link-active',
-        isExactActive && 'router-link-exact-active',
+        $route.path.startsWith(`/${linkname}`) && 'router-link-active',
         linkname,
       ]"
     >

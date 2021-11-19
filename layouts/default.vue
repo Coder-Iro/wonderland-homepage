@@ -2,7 +2,7 @@
   <div id="root">
     <nav>
       <homelink />
-      <member-info />
+      <login-form />
       <ul id="lnb">
         <navlink linkname="notice"> 서버 알림 </navlink>
         <navlink linkname="rules"> 서버 규칙 </navlink>
