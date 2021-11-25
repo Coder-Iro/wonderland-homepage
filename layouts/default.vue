@@ -2,7 +2,8 @@
   <div id="root">
     <nav>
       <homelink />
-      <login-form />
+      <login-form v-if="!user.isLoggedIn" />
+      <user-info v-else />
       <ul id="lnb">
         <navlink linkname="notice"> 서버 알림 </navlink>
         <navlink linkname="rules"> 서버 규칙 </navlink>
@@ -19,6 +20,11 @@
     </main>
   </div>
 </template>
+
+<script setup lang="ts">
+  const { useUser } = useNuxtApp();
+  const user = useUser();
+</script>
 
 <style lang="scss">
   ul,
@@ -77,7 +83,7 @@
   #__layout,
   #root {
     font-size: 13px;
-    font-family: 'gulim', serif;
+    font-family: 'gulim';
     height: 100%;
     // min-width: 480px;
     color: #333;

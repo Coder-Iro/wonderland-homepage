@@ -24,7 +24,7 @@
 </script>
 
 <style lang="scss" scoped>
-  div {
+  article div {
     max-width: 1000px;
   }
 </style>

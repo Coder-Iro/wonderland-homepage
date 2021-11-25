@@ -12,5 +12,6 @@ export default defineNuxtConfig({
       },
     ],
   },
+  buildModules: ['@pinia/nuxt'],
   typescript: { strict: true },
 });

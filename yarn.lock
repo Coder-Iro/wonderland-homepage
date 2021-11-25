@@ -621,6 +621,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@pinia/nuxt@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@pinia/nuxt@npm:0.1.5"
+  dependencies:
+    vue-demi: "*"
+  peerDependencies:
+    pinia: ~2.0.3
+  checksum: dfc1e0e14b63d2e5c501954385cf2f12a1f5f538382824d71f16c2c3b906bb744848f06f6b5633f45126fd1aed415843582001e68f050add1bd5b1b1be86b816
+  languageName: node
+  linkType: hard
+
 "@polka/url@npm:^1.0.0-next.20":
   version: 1.0.0-next.21
   resolution: "@polka/url@npm:1.0.0-next.21"
@@ -763,6 +774,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cookie@npm:^0":
+  version: 0.4.1
+  resolution: "@types/cookie@npm:0.4.1"
+  checksum: 3275534ed69a76c68eb1a77d547d75f99fedc80befb75a3d1d03662fb08d697e6f8b1274e12af1a74c6896071b11510631ba891f64d30c78528d0ec45a9c1a18
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.0":
   version: 3.7.1
   resolution: "@types/eslint-scope@npm:3.7.1"
@@ -794,6 +812,13 @@ __metadata:
   version: 0.0.39
   resolution: "@types/estree@npm:0.0.39"
   checksum: 412fb5b9868f2c418126451821833414189b75cc6bf84361156feed733e3d92ec220b9d74a89e52722e03d5e241b2932732711b7497374a404fad49087adc248
+  languageName: node
+  linkType: hard
+
+"@types/js-cookie@npm:^3":
+  version: 3.0.1
+  resolution: "@types/js-cookie@npm:3.0.1"
+  checksum: 134abb4a3f139ae791bdef3735ab14c4c098cb564b34363cc8f0aa6210a715e5e4f25b53717b32acb18099d53221e4f13776917e65ac54b3a60ee676a943abdc
   languageName: node
   linkType: hard
 
@@ -1095,7 +1120,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/devtools-api@npm:^6.0.0-beta.18":
+"@vue/devtools-api@npm:^6.0.0-beta.18, @vue/devtools-api@npm:^6.0.0-beta.20.1":
   version: 6.0.0-beta.20.1
   resolution: "@vue/devtools-api@npm:6.0.0-beta.20.1"
   checksum: e43f75415cfd84fcaf2f7c52752012c400aefe03fe95e0c41cdf31f16a0222d581ca8c575a9d7dc39b554430ecf2ff1a314eebd60c8a9313854fecf820ed59a9
@@ -2251,6 +2276,13 @@ __metadata:
   dependencies:
     safe-buffer: ~5.1.1
   checksum: 985d974a2d33e1a2543ada51c93e1ba2f73eaed608dc39f229afc78f71dcc4c8b7d7c684aa647e3c6a3a204027444d69e53e169ce94e8d1fa8d7dee80c9c8fed
+  languageName: node
+  linkType: hard
+
+"cookie@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "cookie@npm:0.4.1"
+  checksum: bd7c47f5d94ab70ccdfe8210cde7d725880d2fcda06d8e375afbdd82de0c8d3b73541996e9ce57d35f67f672c4ee6d60208adec06b3c5fc94cebb85196084cf8
   languageName: node
   linkType: hard
 
@@ -4378,6 +4410,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-cookie@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "js-cookie@npm:3.0.1"
+  checksum: bb48de67e2a6bd1ae3dfd6b2d5a167c33dd0c5a37e909206161eb0358c98f17cb55acd55827a58e9eea3630d89444e7479f7938ef4420dda443218b8c434a4c3
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -5678,6 +5717,36 @@ nuxt3@latest:
   languageName: node
   linkType: hard
 
+"pinia-plugin-persistedstate@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "pinia-plugin-persistedstate@npm:1.0.2"
+  dependencies:
+    shvl: ^2.0.3
+  peerDependencies:
+    pinia: ^2.0.2
+  checksum: 7d92a0398554ffcbe3fba9c201dc35f7a3dd905eebe600effe25ab7839a4f69a4251cd91fe5650b8948671702c5675e1c786732be78e9905dfced1c090eb1fd6
+  languageName: node
+  linkType: hard
+
+"pinia@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "pinia@npm:2.0.4"
+  dependencies:
+    "@vue/devtools-api": ^6.0.0-beta.20.1
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ^4.4.4
+    vue: ^2.6.14 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 6f4ef61d8fe7d70df28a78c8591d00b61ab2570ee89a6ef713abff2b19ac622104ca5d19122978c7ce58f355c0cbbc95834a00b3252f527123dec68405a05c9d
+  languageName: node
+  linkType: hard
+
 "pkg-dir@npm:^4.1.0":
   version: 4.2.0
   resolution: "pkg-dir@npm:4.2.0"
@@ -6522,9 +6591,16 @@ nuxt3@latest:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@pinia/nuxt": ^0.1.5
+    "@types/cookie": ^0
+    "@types/js-cookie": ^3
+    cookie: ^0.4.1
     husky: ^7.0.4
+    js-cookie: ^3.0.1
     lint-staged: ^12.0.3
     nuxt3: latest
+    pinia: ^2.0.4
+    pinia-plugin-persistedstate: ^1.0.2
     prettier: ^2.4.1
     sass: ^1.43.4
     vue3-youtube: ^0.1.8
@@ -6767,6 +6843,13 @@ nuxt3@latest:
   version: 3.0.0
   resolution: "shebang-regex@npm:3.0.0"
   checksum: 1a2bcae50de99034fcd92ad4212d8e01eedf52c7ec7830eedcf886622804fe36884278f2be8be0ea5fde3fd1c23911643a4e0f726c8685b61871c8908af01222
+  languageName: node
+  linkType: hard
+
+"shvl@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "shvl@npm:2.0.3"
+  checksum: 07d93a9dd92f966b1e506d479d841243d7296902673f8641927c8624fec700742298063d06d2f1b6cf52b546f015a3c4bb5900a910fc0181c02b73bf4791223d
   languageName: node
   linkType: hard
 
@@ -7645,6 +7728,22 @@ nuxt3@latest:
   dependencies:
     bundle-runner: ^0.0.1
   checksum: eb1dd8faa5b0b406770de48bdb58a374baf7727e37d40380fea25b970c398040f312204b548fc6a33c37d2d00eb04392f327f70f23537d2bb11b8185fca7f47d
+  languageName: node
+  linkType: hard
+
+"vue-demi@npm:*":
+  version: 0.12.1
+  resolution: "vue-demi@npm:0.12.1"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: d39a43e765e5bc34cf5b378ccff53a521e824f8c55aae6a9163c294364e8af593c5331b3b3b1b679b28096a3142abed5aed07e2dfb581c96f2eba88a176666f2
   languageName: node
   linkType: hard
 

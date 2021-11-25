@@ -7,6 +7,8 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
+    "@types/cookie": "^0",
+    "@types/js-cookie": "^3",
     "husky": "^7.0.4",
     "lint-staged": "^12.0.3",
     "nuxt3": "latest",
@@ -15,6 +17,11 @@
   },
   "packageManager": "yarn@3.1.0",
   "dependencies": {
+    "@pinia/nuxt": "^0.1.5",
+    "cookie": "^0.4.1",
+    "js-cookie": "^3.0.1",
+    "pinia": "^2.0.4",
+    "pinia-plugin-persistedstate": "^1.0.2",
     "vue3-youtube": "^0.1.8"
   },
   "lint-staged": {
