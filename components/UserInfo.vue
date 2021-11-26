@@ -41,7 +41,6 @@
       background-repeat: no-repeat;
       cursor: pointer;
       overflow: hidden;
-      display: inline-block;
       padding: 0;
       padding-left: 15px;
       width: 45px;

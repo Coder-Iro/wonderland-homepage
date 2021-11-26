@@ -1,12 +1,23 @@
 <template>
   <div class="formWrapper">
     <form>
-      <label for="userid">ID</label>{{ space }}
+      <label for="userid">ID</label>{{ ' ' }}
       <input id="userid" name="userid" type="text" />
-      <label for="password">PW</label>{{ space }}
+      <label for="password">PW</label>{{ ' ' }}
       <input id="password" name="password" type="password" />
       <div class="button">
-        <button type="button">로그인</button>
+        <button
+          type="button"
+          @click="
+            user.login({
+              username: 'Coder_Iro',
+              uuid: 'e6a06a59c144405bbdcfb8cf9fcdbe3d',
+              token: '',
+            })
+          "
+        >
+          로그인
+        </button>
         <nuxt-link to="/member"> 가입안내 </nuxt-link>
       </div>
     </form>
@@ -14,7 +25,8 @@
 </template>
 
 <script setup lang="ts">
-  const space = ' ';
+  const { useUser } = useNuxtApp();
+  const user = useUser();
 </script>
 
 <script lang="ts">
