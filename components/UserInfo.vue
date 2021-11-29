@@ -59,4 +59,29 @@
       }
     }
   }
+  @media (max-width: 700px), (orientation: portrait) {
+    div {
+      width: 250px;
+      height: 22px;
+      text-align: right;
+      padding: 3px 5px;
+      margin: 5px;
+      float: right;
+      strong {
+        float: left;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        display: inline;
+        margin: 0;
+        float: left;
+      }
+      button {
+        height: 20px;
+        width: 65px;
+        padding-top: 6px;
+      }
+    }
+  }
 </style>
