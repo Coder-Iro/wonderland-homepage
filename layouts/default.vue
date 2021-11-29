@@ -27,7 +27,7 @@
 </script>
 
 <style lang="scss">
-  @import url('pretendard/dist/web/variable/pretendardvariable.css');
+  @import url('pretendard/dist/web/static/pretendard-dynamic-subset.css');
   ul,
   li {
     list-style: none;
