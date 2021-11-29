@@ -24,11 +24,11 @@
     color: #777;
 
     h2 {
-      font-family: arial, serif;
       font-size: 200%;
       letter-spacing: 5px;
       text-indent: 10px;
       text-shadow: 0 0 1px #777;
+      font-family: Arial, Helvetica, sans-serif;
     }
   }
 

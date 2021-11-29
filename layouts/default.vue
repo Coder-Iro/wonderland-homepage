@@ -27,6 +27,7 @@
 </script>
 
 <style lang="scss">
+  @import url('pretendard/dist/web/variable/pretendardvariable.css');
   ul,
   li {
     list-style: none;
@@ -83,7 +84,11 @@
   #__layout,
   #root {
     font-size: 13px;
-    font-family: 'gulim';
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+      Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+      'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+    //font-family: 'gulim';
     height: 100%;
     // min-width: 480px;
     color: #333;

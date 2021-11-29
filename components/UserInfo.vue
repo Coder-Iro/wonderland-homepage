@@ -47,7 +47,6 @@
       height: 30px;
       font-size: 12px;
       line-height: 13px;
-      font-family: 'gulim';
       border: none;
       &#modify {
         background-position: 0px -398px;

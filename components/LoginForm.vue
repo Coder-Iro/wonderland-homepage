@@ -60,7 +60,6 @@
       font-size: 10px;
       font-weight: bold;
       color: #fb5;
-      font-family: 'arial';
       text-indent: 3px;
     }
 
@@ -82,7 +81,6 @@
       border: 0;
       color: #693;
       font-size: 12px;
-      font-family: 'gulim';
       padding: 5px 0 0 17px;
       text-align: left;
       margin: auto;
@@ -99,7 +97,6 @@
       display: inline-block;
       font-size: 12px;
       line-height: 13px;
-      font-family: 'gulim';
     }
 
     div.button {

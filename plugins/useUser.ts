@@ -1,10 +1,10 @@
 import { NuxtApp } from 'nuxt3';
-import { createPinia, defineStore, setActivePinia } from 'pinia';
+import { defineStore } from 'pinia';
 import persistedstate from 'pinia-plugin-persistedstate';
 import Cookies from 'js-cookie';
 import * as cookie from 'cookie';
 
-export default (context: NuxtApp, inject: Function) => {
+export default (context: NuxtApp, inject: Function): void => {
   context.$pinia.use(persistedstate);
   const useUser = defineStore({
     id: 'user',
