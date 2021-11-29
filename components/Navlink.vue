@@ -95,7 +95,7 @@
       float: left;
       border: 0;
 
-      &.router-link-exact-active {
+      &.router-link-active {
         border-left: 0;
         background-color: #111;
       }
