@@ -28,7 +28,6 @@
       letter-spacing: 5px;
       text-indent: 10px;
       text-shadow: 0 0 1px #777;
-      font-family: Arial, Helvetica, sans-serif;
     }
   }
 
