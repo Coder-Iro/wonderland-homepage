@@ -53,7 +53,7 @@
     &.router-link-active {
       background-color: #111;
       border-left: 2px solid #f33;
-      font-weight: bold;
+      font-weight: 800;
     }
 
     &.notice {
@@ -103,7 +103,6 @@
       &:hover {
         border: none;
         background-color: #111;
-        //font-weight: bold;
       }
 
       a {
