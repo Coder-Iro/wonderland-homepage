@@ -5,7 +5,7 @@
       <youtube
         id="yt"
         src="Zd9qb73cj1o"
-        width="640"
+        width="600"
         height="350"
         host="https://www.youtube-nocookie.com"
         :vars="{
