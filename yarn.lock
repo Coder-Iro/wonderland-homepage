@@ -836,6 +836,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/geojson@npm:^7946.0.7":
+  version: 7946.0.8
+  resolution: "@types/geojson@npm:7946.0.8"
+  checksum: 6049a39b025cfe323d5cf87333d87c133ec963cdbd349c49295bee779827ee4b46a3041fd8bd2e7a4b02d6d1e26f3002968875928941bbed08477bfd5f6f9284
+  languageName: node
+  linkType: hard
+
 "@types/js-cookie@npm:^3":
   version: 3.0.1
   resolution: "@types/js-cookie@npm:3.0.1"
@@ -865,6 +872,13 @@ __metadata:
   version: 16.11.10
   resolution: "@types/node@npm:16.11.10"
   checksum: 9c79419c5c3d92d5825bffa30f3668533f598d8b63a73ea7fc24e47f162bdbed92b0f8e4f4261cc3314b39cee050e303366d2aa154abc95c63a572a110b8c160
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^14.14.28":
+  version: 14.17.34
+  resolution: "@types/node@npm:14.17.34"
+  checksum: 803a7532b6998aca6aa1b3e6239f280e82612d4f641d38fbf08962c905ea9d1b278b2f09d396beac5120a4e68f33d7467298b197f2f00150ec1dcd546de02a89
   languageName: node
   linkType: hard
 
@@ -2686,7 +2700,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"denque@npm:^1.1.0":
+"denque@npm:^1.1.0, denque@npm:^1.5.0":
   version: 1.5.1
   resolution: "denque@npm:1.5.1"
   checksum: 4375ad19d5cea99f90effa82a8cecdaa10f4eb261fbcd7e47cd753ff2737f037aac8f7f4e031cc77f3966314c491c86a0d3b20c128aeee57f791b4662c45108e
@@ -4146,7 +4160,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iconv-lite@npm:^0.6.2":
+"iconv-lite@npm:^0.6.2, iconv-lite@npm:^0.6.3":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
   dependencies:
@@ -4993,6 +5007,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"long@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "long@npm:4.0.0"
+  checksum: 16afbe8f749c7c849db1f4de4e2e6a31ac6e617cead3bdc4f9605cb703cd20e1e9fc1a7baba674ffcca57d660a6e5b53a9e236d7b25a295d3855cca79cc06744
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^6.0.0":
   version: 6.0.0
   resolution: "lru-cache@npm:6.0.0"
@@ -5041,6 +5062,21 @@ __metadata:
     socks-proxy-agent: ^6.0.0
     ssri: ^8.0.0
   checksum: 0eb371c85fdd0b1584fcfdf3dc3c62395761b3c14658be02620c310305a9a7ecf1617a5e6fb30c1d081c5c8aaf177fa133ee225024313afabb7aa6a10f1e3d04
+  languageName: node
+  linkType: hard
+
+"mariadb@npm:^2.5.5":
+  version: 2.5.5
+  resolution: "mariadb@npm:2.5.5"
+  dependencies:
+    "@types/geojson": ^7946.0.7
+    "@types/node": ^14.14.28
+    denque: ^1.5.0
+    iconv-lite: ^0.6.3
+    long: ^4.0.0
+    moment-timezone: ^0.5.33
+    please-upgrade-node: ^3.2.0
+  checksum: 28e09ad071f6983032982027efdaf7f3f09ac5cf36941ab0b32ad2b671b3096056ce5111257df5eca13e5d29dc737a9ef8410e791eea470c48f86966c29f2c84
   languageName: node
   linkType: hard
 
@@ -5293,6 +5329,22 @@ __metadata:
   version: 0.3.14
   resolution: "mlly@npm:0.3.14"
   checksum: cf17c1f073641538e9be093a825fddc7b7d165f1342958667e622ff2bac20cb02b998a0a1ddf48bcfd848468fab232835aabf35dadacecb0656d4af16eeb6f66
+  languageName: node
+  linkType: hard
+
+"moment-timezone@npm:^0.5.33":
+  version: 0.5.34
+  resolution: "moment-timezone@npm:0.5.34"
+  dependencies:
+    moment: ">= 2.9.0"
+  checksum: 12a1d3d52e4ba509cf1fa36bbda59d898a08fa80ab35f6c358747e93aec1f07e617cec647eaf2e8acf5f9132e581d4704d34a9edffa9a80c5cd04bf23b277595
+  languageName: node
+  linkType: hard
+
+"moment@npm:>= 2.9.0":
+  version: 2.29.1
+  resolution: "moment@npm:2.29.1"
+  checksum: 1e14d5f422a2687996be11dd2d50c8de3bd577c4a4ca79ba5d02c397242a933e5b941655de6c8cb90ac18f01cc4127e55b4a12ae3c527a6c0a274e455979345e
   languageName: node
   linkType: hard
 
@@ -6006,6 +6058,15 @@ __metadata:
     mlly: ^0.3.6
     pathe: ^0.2.0
   checksum: 47624bbac446dd77bc91e58aeca0e9c1779b4c3b6991edd72b64c10b8571938cdd0e752b6fdbc0ebe274ccddfcbb6a98d6ac9051dc993614421ad5889a789f20
+  languageName: node
+  linkType: hard
+
+"please-upgrade-node@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "please-upgrade-node@npm:3.2.0"
+  dependencies:
+    semver-compare: ^1.0.0
+  checksum: d87c41581a2a022fbe25965a97006238cd9b8cbbf49b39f78d262548149a9d30bd2bdf35fec3d810e0001e630cd46ef13c7e19c389dea8de7e64db271a2381bb
   languageName: node
   linkType: hard
 
@@ -6853,6 +6914,7 @@ __metadata:
     husky: ^7.0.4
     js-cookie: ^3.0.1
     lint-staged: ^12.1.2
+    mariadb: ^2.5.5
     nuxt3: ^3.0.0-27304790.cad09fe
     pinia: ^2.0.4
     pinia-plugin-persistedstate: ^1.0.2
@@ -6967,6 +7029,13 @@ __metadata:
   dependencies:
     node-forge: ^0.10.0
   checksum: 1fd8fd317dc0b7d713d12d828131ac03c53abf41c4538b263fecd37bbc15688526c631654049ff00806b757ccb85492de6a13d6fefcad5cb54926631e48a76e1
+  languageName: node
+  linkType: hard
+
+"semver-compare@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "semver-compare@npm:1.0.0"
+  checksum: dd1d7e2909744cf2cf71864ac718efc990297f9de2913b68e41a214319e70174b1d1793ac16e31183b128c2b9812541300cb324db8168e6cf6b570703b171c68
   languageName: node
   linkType: hard
 

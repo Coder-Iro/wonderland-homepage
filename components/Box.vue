@@ -1,19 +1,33 @@
 <template>
-  <div><slot /></div>
+  <div :class="[type]"><slot /></div>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
-  export default defineComponent({ name: 'Box' });
+  import { defineComponent, PropType } from 'vue';
+  export default defineComponent({
+    name: 'Box',
+    props: {
+      type: {
+        validator: (value: string) => ['box', 'alert', 'sub'].includes(value),
+        default: 'box',
+      },
+    },
+  });
 </script>
 
 <style lang="scss" scoped>
-  div {
+  .box {
     position: relative;
     padding: 20px;
     margin: 20px 0;
     border: 1px solid #eaeaea;
     background: #fcfcfc;
     border-radius: 5px;
+  }
+  .alert {
+    border-color: #e82;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    line-height: 160%;
   }
 </style>
