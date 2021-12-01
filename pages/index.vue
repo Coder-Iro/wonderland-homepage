@@ -13,6 +13,7 @@
           list: 'PL53hvoBTs0vSt9onWSOIclXklkZtNfg1K',
           origin: 'http://localhost:3000',
           enablejsapi: 1,
+          modestbranding: 1,
         }"
       />
     </article>

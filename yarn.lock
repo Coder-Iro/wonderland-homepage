@@ -451,11 +451,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27303148.ac98373":
-  version: 3.0.0-27303148.ac98373
-  resolution: "@nuxt/kit-edge@npm:3.0.0-27303148.ac98373"
+"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27304790.cad09fe":
+  version: 3.0.0-27304790.cad09fe
+  resolution: "@nuxt/kit-edge@npm:3.0.0-27304790.cad09fe"
   dependencies:
-    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-27303148.ac98373"
+    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-27304790.cad09fe"
     consola: ^2.15.3
     defu: ^5.0.0
     dotenv: ^10.0.0
@@ -471,19 +471,19 @@ __metadata:
     semver: ^7.3.5
     unctx: ^1.0.2
     untyped: ^0.3.0
-  checksum: a669ef0d444c22afaa8935a4c28016d388ddf2fecb0065390a66c50c3f3ad9afebc4871e44d54dffcfabf45282533a61b76ef3acba1859f02309ce0f1338a323
+  checksum: bf603e0189449cffb0969a8b006b80f5c4fc099de1e05f1d13d7ac3d73ff499908ccbf144614c17e045eacdf3b50839cd4d787371415aa7577c28a11e8a12abe
   languageName: node
   linkType: hard
 
-"@nuxt/nitro@npm:@nuxt/nitro-edge@3.0.0-27303148.ac98373":
-  version: 3.0.0-27303148.ac98373
-  resolution: "@nuxt/nitro-edge@npm:3.0.0-27303148.ac98373"
+"@nuxt/nitro@npm:@nuxt/nitro-edge@3.0.0-27304790.cad09fe":
+  version: 3.0.0-27304790.cad09fe
+  resolution: "@nuxt/nitro-edge@npm:3.0.0-27304790.cad09fe"
   dependencies:
     "@cloudflare/kv-asset-handler": ^0.2.0
     "@netlify/functions": ^0.10.0
     "@nuxt/design": 0.1.5
     "@nuxt/devalue": ^2.0.0
-    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27303148.ac98373"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27304790.cad09fe"
     "@rollup/plugin-alias": ^3.1.8
     "@rollup/plugin-commonjs": ^21.0.1
     "@rollup/plugin-inject": ^4.0.3
@@ -536,13 +536,13 @@ __metadata:
     unstorage: ^0.3.3
     vue-bundle-renderer: ^0.3.3
     vue-server-renderer: ^2.6.14
-  checksum: a4f07970e3161e300c38682917ba49809b0c85f774dd5c85ddb0744a80dbc80aa7d7f49879884076cb8c7ae7dceea45887926c4cde9e673482b2070f638bb4c3
+  checksum: 191d2d25bb1d1c1bb7c70c0a3d12c81f976e619ab634a95613322e4bd8e878ca5bc6ed5cd43d1052d0e33691f5f66550a980a5ecaa940347e6d7876000d04d04
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27303148.ac98373":
-  version: 3.0.0-27303148.ac98373
-  resolution: "@nuxt/schema-edge@npm:3.0.0-27303148.ac98373"
+"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27304790.cad09fe":
+  version: 3.0.0-27304790.cad09fe
+  resolution: "@nuxt/schema-edge@npm:3.0.0-27304790.cad09fe"
   dependencies:
     create-require: ^1.1.1
     defu: ^5.0.0
@@ -551,15 +551,15 @@ __metadata:
     scule: ^0.2.1
     std-env: ^3.0.1
     ufo: ^0.7.9
-  checksum: b580e6880dc20a2c9f971799627cd010f9224857d495991b12325177c257bea65d0199a35570d7b437320823a7b78d3c3012fa1b5b786cdf6a8fac1522e0df28
+  checksum: 8fd54fbd443dd91aebc21e648487d3d7266170830612b365b0ec7c99da7a6cdb930778552a0845ecfbbbbd80bd81191244cff10ac9d2a1864a60878a14d7892c
   languageName: node
   linkType: hard
 
-"@nuxt/vite-builder@npm:@nuxt/vite-builder-edge@3.0.0-27303148.ac98373":
-  version: 3.0.0-27303148.ac98373
-  resolution: "@nuxt/vite-builder-edge@npm:3.0.0-27303148.ac98373"
+"@nuxt/vite-builder@npm:@nuxt/vite-builder-edge@3.0.0-27304790.cad09fe":
+  version: 3.0.0-27304790.cad09fe
+  resolution: "@nuxt/vite-builder-edge@npm:3.0.0-27304790.cad09fe"
   dependencies:
-    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27303148.ac98373"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27304790.cad09fe"
     "@vitejs/plugin-vue": ^1.10.1
     "@vitejs/plugin-vue-jsx": ^1.3.0
     autoprefixer: ^10.4.0
@@ -581,17 +581,17 @@ __metadata:
     vite: ^2.6.14
   peerDependencies:
     vue: 3.2.23
-  checksum: f5f2c59094b82bd6f9126fd0be9b91554435b81e272ec8e6d2af4ac4da5554d9487c60a62e5ef7ee078f511be02132299b3f5d1e1ba553e6de59cb25585461a7
+  checksum: 3bd5fd01f4b6fa36fba981aff5620601c9122d82338a8ddaf10e035a6b51989cdcb9c5f16fe0e7c96aa5f960a31257be6125217119331dee946a10a3afbe7b90
   languageName: node
   linkType: hard
 
-"@nuxt/webpack-builder@npm:@nuxt/webpack-builder-edge@3.0.0-27303148.ac98373":
-  version: 3.0.0-27303148.ac98373
-  resolution: "@nuxt/webpack-builder-edge@npm:3.0.0-27303148.ac98373"
+"@nuxt/webpack-builder@npm:@nuxt/webpack-builder-edge@3.0.0-27304790.cad09fe":
+  version: 3.0.0-27304790.cad09fe
+  resolution: "@nuxt/webpack-builder-edge@npm:3.0.0-27304790.cad09fe"
   dependencies:
     "@babel/core": ^7.16.0
     "@nuxt/friendly-errors-webpack-plugin": ^2.5.2
-    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27303148.ac98373"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27304790.cad09fe"
     "@vue/babel-preset-jsx": ^1.2.4
     autoprefixer: ^10.4.0
     babel-loader: ^8.2.3
@@ -629,7 +629,7 @@ __metadata:
     webpackbar: ^5.0.2
   peerDependencies:
     vue: 3.2.23
-  checksum: 596d494c868600986ef6de9e0b4d2d4632acbcf861836e1b8758771b1c30af77ad43b46cd7f4ae3444f5d82d883b16fb2cc5df0549a53f7fd247d7a41f01cb0c
+  checksum: 56db3680f6839eef990174df293d998ad773ef9a482d39c281188b4e83a19619f5da70d12a29621e4238095b5519b166dd5895f4f087c568a276dd8c284294da
   languageName: node
   linkType: hard
 
@@ -4187,6 +4187,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"immutable@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "immutable@npm:4.0.0"
+  checksum: 4b5e9181e4d5fa06728a481835ec09c86367e5d03268666c95b522b7644ab891098022e4479a43c4c81a68f2ed82f10751ce5d33e208d7b873b6e7f9dfaf4d87
+  languageName: node
+  linkType: hard
+
 "import-fresh@npm:^3.2.1":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
@@ -4756,7 +4763,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.0.3":
+"lint-staged@npm:^12.1.2":
   version: 12.1.2
   resolution: "lint-staged@npm:12.1.2"
   dependencies:
@@ -5588,9 +5595,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxi@npm:nuxi-edge@3.0.0-27303148.ac98373":
-  version: 3.0.0-27303148.ac98373
-  resolution: "nuxi-edge@npm:3.0.0-27303148.ac98373"
+"nuxi@npm:nuxi-edge@3.0.0-27304790.cad09fe":
+  version: 3.0.0-27304790.cad09fe
+  resolution: "nuxi-edge@npm:3.0.0-27304790.cad09fe"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -5598,20 +5605,20 @@ __metadata:
       optional: true
   bin:
     nuxi-edge: ./bin/nuxi.mjs
-  checksum: 6bb2789ab70d46625c5b08c15d4db588de33f8c60f1e65bf2c4973ed7c04e50bfcd7ef303332b1c9d8b08c4c6352bb2a85fe08b24a89d93ffd4f39b26f85954a
+  checksum: d1cdf77da418ace2c2f43ef8a45c14ac7bb4cffe5e20182d53e678cdc00af14d3c99b172e042949a9898ac4585c75f62efb0b4f3d5a8fd27b7017e4f3fbb911e
   languageName: node
   linkType: hard
 
-"nuxt3@npm:latest":
-  version: 3.0.0-27303148.ac98373
-  resolution: "nuxt3@npm:3.0.0-27303148.ac98373"
+"nuxt3@npm:^3.0.0-27304790.cad09fe":
+  version: 3.0.0-27304790.cad09fe
+  resolution: "nuxt3@npm:3.0.0-27304790.cad09fe"
   dependencies:
     "@nuxt/design": ^0.1.5
-    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27303148.ac98373"
-    "@nuxt/nitro": "npm:@nuxt/nitro-edge@3.0.0-27303148.ac98373"
-    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-27303148.ac98373"
-    "@nuxt/vite-builder": "npm:@nuxt/vite-builder-edge@3.0.0-27303148.ac98373"
-    "@nuxt/webpack-builder": "npm:@nuxt/webpack-builder-edge@3.0.0-27303148.ac98373"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27304790.cad09fe"
+    "@nuxt/nitro": "npm:@nuxt/nitro-edge@3.0.0-27304790.cad09fe"
+    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-27304790.cad09fe"
+    "@nuxt/vite-builder": "npm:@nuxt/vite-builder-edge@3.0.0-27304790.cad09fe"
+    "@nuxt/webpack-builder": "npm:@nuxt/webpack-builder-edge@3.0.0-27304790.cad09fe"
     "@vue/reactivity": ^3.2.23
     "@vue/shared": ^3.2.23
     "@vueuse/head": ^0.7.2
@@ -5627,7 +5634,7 @@ __metadata:
     ignore: ^5.1.9
     mlly: ^0.3.13
     murmurhash-es: ^0.1.1
-    nuxi: "npm:nuxi-edge@3.0.0-27303148.ac98373"
+    nuxi: "npm:nuxi-edge@3.0.0-27304790.cad09fe"
     ohmyfetch: ^0.4.8
     pathe: ^0.2.0
     scule: ^0.2.1
@@ -5638,7 +5645,7 @@ __metadata:
   bin:
     nuxi: ./bin/nuxt.mjs
     nuxt: ./bin/nuxt.mjs
-  checksum: 06a0252d1c9cab9e78f7e14094bf0dac06099386278e990b47b083f713e033aed5b49b13f8ee758e2200de48fbe8c7bcd99e4a92bbac22125a590309b4b28ffc
+  checksum: e281d23c859e8e29e0c5377d2177a6cdd5884694fc50dfb58e56bea91c974c480576f74c7f84c672c3fd42601898d8e080c7db33b32b8edb302ddc4705f3d3f9
   languageName: node
   linkType: hard
 
@@ -6446,7 +6453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.4.1":
+"prettier@npm:^2.5.0":
   version: 2.5.0
   resolution: "prettier@npm:2.5.0"
   bin:
@@ -6845,13 +6852,13 @@ __metadata:
     cookie: ^0.4.1
     husky: ^7.0.4
     js-cookie: ^3.0.1
-    lint-staged: ^12.0.3
-    nuxt3: latest
+    lint-staged: ^12.1.2
+    nuxt3: ^3.0.0-27304790.cad09fe
     pinia: ^2.0.4
     pinia-plugin-persistedstate: ^1.0.2
-    prettier: ^2.4.1
-    sass: ^1.43.4
-    vue3-youtube: ^0.1.8
+    prettier: ^2.5.0
+    sass: ^1.44.0
+    vue3-youtube: ^0.1.9
   languageName: unknown
   linkType: soft
 
@@ -6894,14 +6901,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.43.4":
-  version: 1.43.5
-  resolution: "sass@npm:1.43.5"
+"sass@npm:^1.44.0":
+  version: 1.44.0
+  resolution: "sass@npm:1.44.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
+    immutable: ^4.0.0
   bin:
     sass: sass.js
-  checksum: 4dc71400a6e21e0aa841ba69f536ba242b956229fea88acc3faafa44114ca59496a4b153704175c36ac835e33934059dc8d843638c8952f4f1220adbef54c988
+  checksum: 35b5b21ee5f9ca4012793052c203df0b4114f33b8c33bb4cba21c90d3141337a8a19e3ed934f2c783ace80a3534333c5248dc1a2f2e5ba45ce326591d3a08051
   languageName: node
   linkType: hard
 
@@ -8017,15 +8025,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue3-youtube@npm:^0.1.8":
-  version: 0.1.8
-  resolution: "vue3-youtube@npm:0.1.8"
+"vue3-youtube@npm:^0.1.9":
+  version: 0.1.9
+  resolution: "vue3-youtube@npm:0.1.9"
   dependencies:
     "@types/youtube": ^0.0.39
     core-js: ^3.6.5
     get-youtube-id: ^1.0.1
     vue: ^3.0.0
-  checksum: f5c68a80989a19f36ca9e60e6f71d4b4c1a9e13a7e3bfb088421e5450419eda7bd49e47e6b1c57dc413d6b90238d197e16efb346089f300400e51608b1075043
+  checksum: e39885a3ff7e29c974fc24ad38630a5a4db89cc43ef5afabda8adf055eb90fb4088452b87ca82edb0ba0dd2466dd15b9a2e5fb0d7759d4bb978cdc45064a3a96
   languageName: node
   linkType: hard
 

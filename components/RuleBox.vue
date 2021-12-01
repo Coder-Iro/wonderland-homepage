@@ -53,7 +53,7 @@
         height: 25px;
         line-height: 25px;
         color: #47a;
-        font-size: 15px;
+        font-size: 16px;
       }
 
       strong {

@@ -45,8 +45,8 @@
       padding-left: 15px;
       width: 45px;
       height: 30px;
-      font-size: 12px;
-      line-height: 13px;
+      font-size: 13px;
+      line-height: 14px;
       border: none;
       &#modify {
         background-position: 0px -398px;

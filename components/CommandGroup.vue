@@ -26,7 +26,7 @@
 <style lang="scss" scoped>
   h3 {
     color: #47a;
-    font-size: 18px;
+    font-size: 19px;
     padding-bottom: 12px;
     margin-bottom: -1px;
     border-bottom: 2px solid #fd7;

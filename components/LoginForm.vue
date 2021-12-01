@@ -57,7 +57,7 @@
       display: inline-block;
       width: 20px;
       text-align: left;
-      font-size: 10px;
+      font-size: 11px;
       font-weight: bold;
       color: #fb5;
       text-indent: 3px;
@@ -80,7 +80,7 @@
       background: transparent 0px -448px url(../assets/img/lnb-icon.png) no-repeat;
       border: 0;
       color: #693;
-      font-size: 12px;
+      font-size: 13px;
       padding: 5px 0 0 17px;
       text-align: left;
       margin: auto;
@@ -95,8 +95,8 @@
       background: transparent 0px -348px url(../assets/img/lnb-icon.png) no-repeat;
       overflow: hidden;
       display: inline-block;
-      font-size: 12px;
-      line-height: 13px;
+      font-size: 13px;
+      line-height: 14px;
     }
 
     div.button {
