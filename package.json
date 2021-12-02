@@ -11,7 +11,7 @@
     "@types/js-cookie": "^3",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
-    "nuxt3": "^3.0.0-27304790.cad09fe",
+    "nuxt3": "^3.0.0-27307420.6a25d3e",
     "prettier": "^2.5.0",
     "sass": "^1.44.0"
   },
@@ -21,7 +21,7 @@
     "cookie": "^0.4.1",
     "js-cookie": "^3.0.1",
     "mariadb": "^2.5.5",
-    "pinia": "^2.0.4",
+    "pinia": "^2.0.5",
     "pinia-plugin-persistedstate": "^1.0.2",
     "vue3-youtube": "^0.1.9"
   },
