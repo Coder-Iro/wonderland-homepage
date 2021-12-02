@@ -2,7 +2,7 @@
   <div>
     <header-bar>RULES</header-bar>
     <article>
-      <box type="alert" id="alert">
+      <box type="alert">
         <icon name="alert">주의</icon>
         <p>
           서버규칙을 어긴 경우 경고 조치 되며 1회 이상 경고 후에는 서버에서
@@ -27,7 +27,7 @@
 </script>
 
 <style lang="scss" scoped>
-  #alert {
+  .alert {
     min-height: 110px;
     text-align: center;
   }

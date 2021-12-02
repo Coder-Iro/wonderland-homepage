@@ -1,16 +1,14 @@
 interface Introduce {
   title: string;
-  content: string | string[];
+  content: string;
 }
 
 export const introduce: Introduce[] = [
   {
     title: '[RED]서버사양[/RED]',
-    content: [
-      '[GREEN]OS[/GREEN] Windows Server 2022 Datacenter 64bit',
-      '[GREEN]CPU[/GREEN] AMD Ryzen 9 5900X 3.70Ghz',
-      '[GREEN]RAM[/GREEN] 32GB [GREEN]SSD[/GREEN] 1TB M.2 R7,300M W6,900M',
-    ],
+    content: `[GREEN]OS[/GREEN] Windows Server 2022 Datacenter 64bit
+      [GREEN]CPU[/GREEN] AMD Ryzen 9 5900X 3.70Ghz
+      [GREEN]RAM[/GREEN] 32GB [GREEN]SSD[/GREEN] 1TB M.2 R7,300M W6,900M`,
   },
   { title: '접속주소', content: '[ORANGE]wonderland-server.net[/ORANGE]' },
   { title: '게임버전', content: '1.17.1' },

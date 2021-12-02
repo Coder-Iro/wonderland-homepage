@@ -1,5 +1,5 @@
 <template>
-  <div :class="[type]"><slot /></div>
+  <div class="box" :class="[type]"><slot /></div>
 </template>
 
 <script lang="ts">
@@ -8,8 +8,7 @@
     name: 'Box',
     props: {
       type: {
-        validator: (value: string) => ['box', 'alert', 'sub'].includes(value),
-        default: 'box',
+        type: String as PropType<'alert' | 'sub'>,
       },
     },
   });
