@@ -6,7 +6,7 @@
         id="yt"
         src="Zd9qb73cj1o"
         width="600"
-        height="350"
+        height="354"
         host="https://www.youtube-nocookie.com"
         :vars="{
           listType: 'player',
@@ -56,6 +56,7 @@
         <div class="clear" />
       </div>
     </article>
+    <footer-bar />
   </div>
 </template>
 
@@ -97,6 +98,7 @@
           min-height: 350px;
           overflow: auto;
           margin-right: 20px;
+          line-height: 19px;
           h3 {
             margin-bottom: 10px;
             color: #47a;
