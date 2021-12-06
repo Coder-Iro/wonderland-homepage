@@ -141,7 +141,7 @@
               position: absolute;
               top: 20px;
               right: 20px;
-              font-size: 11px;
+              font-size: 12px;
               font-weight: normal;
             }
           }
@@ -149,6 +149,28 @@
       }
       div.clear {
         clear: both;
+      }
+    }
+  }
+  @media (max-width: 700px), (orientation: portrait) {
+    article {
+      div.info {
+        section {
+          width: 100%;
+          .box {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    #yt {
+      max-width: 100%;
+      padding: 0px;
+      height: 334px !important;
+      :deep(iframe) {
+        width: 100% !important;
+        height: 330px !important;
+        border: 0px !important;
       }
     }
   }
