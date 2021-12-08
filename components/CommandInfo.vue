@@ -55,7 +55,6 @@
       text-align: center;
       font-weight: bold;
       color: #582;
-      word-spacing: -2px;
 
       &.kor {
         left: 150px;

@@ -15,7 +15,7 @@ type color =
   | 'npc'
   | 'mob';
 
-interface Content {
+export interface Content {
   title: string;
   id: string;
   color: color;
