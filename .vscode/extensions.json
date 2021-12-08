@@ -4,6 +4,8 @@
     "gamunu.vscode-yarn",
     "misterj.vue-volar-extention-pack",
     "esbenp.prettier-vscode",
-    "nuxtlabs.docus"
+    "nuxtlabs.docus",
+    "joshbolduc.commitlint",
+    "vivaxy.vscode-conventional-commits"
   ]
 }

@@ -7,6 +7,8 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@types/cookie": "^0",
     "@types/js-cookie": "^3",
     "husky": "^7.0.4",
