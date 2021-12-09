@@ -2,11 +2,15 @@
   <div>
     <header-bar>CONTENTS</header-bar>
     <article>
-      <content-box :content="{ title: '[GREEN]💳 경제 (мега)[/GREEN]' }" />
+      <content-box v-for="content in contents" :content="content" />
     </article>
     <footer-bar />
   </div>
 </template>
+
+<script setup lang="ts">
+  import { contents } from 'assets/data/contents';
+</script>
 
 <script lang="ts">
   import { defineComponent } from 'vue';
