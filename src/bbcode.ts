@@ -27,6 +27,7 @@ export default function bbcode(str: string): string {
       new RegExp(`\\[/${c.toUpperCase()}\\]`, 'g'),
       `</strong>`
     );
+    str = str.replace(new RegExp('\n', 'g'), '<br>');
   });
   return str;
 }

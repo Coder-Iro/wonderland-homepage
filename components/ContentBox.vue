@@ -18,9 +18,14 @@
 
     <section v-show="actived">
       <img v-if="content.img" :src="`assets/img/contents/${content.id}.png`" />
+      <div v-html="bbcode(content.desc)" />
     </section>
   </box>
 </template>
+
+<script setup lang="ts">
+  import bbcode from '@/src/bbcode';
+</script>
 
 <script lang="ts">
   import { PropType } from 'vue';
