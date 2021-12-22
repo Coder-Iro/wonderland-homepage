@@ -29,4 +29,10 @@
     font-weight: bold;
     line-height: 160%;
   }
+
+  .sub {
+    border-color: #e3e3e3;
+    background-color: #f8f8f8;
+    line-height: 160%;
+  }
 </style>

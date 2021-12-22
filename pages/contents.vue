@@ -2,7 +2,9 @@
   <div>
     <header-bar>CONTENTS</header-bar>
     <article>
-      <content-box v-for="content in contents" :content="content" />
+      <div>
+        <content-box v-for="content in contents" :content="content" />
+      </div>
     </article>
     <footer-bar />
   </div>
@@ -19,4 +21,8 @@
   });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+  article div {
+    max-width: 1000px;
+  }
+</style>

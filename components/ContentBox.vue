@@ -1,24 +1,25 @@
 <template>
-  <box>
+  <box :id="content.id">
     <h3
       :style="
-        actived
-          ? [
-              'border-width: 1px;',
-              'padding-bottom: 10px;',
-              'margin-bottom: 10px;',
-            ]
+        !actived
+          ? ['border-width: 0;', 'padding-bottom: 0;', 'margin-bottom: 0;']
           : undefined
       "
     >
-      <button type="button" @click="actived = !actived">
+      <a :href="`#${content.id}`" @click="actived = !actived">
         <strong :class="content.color">{{ content.title }}</strong>
-      </button>
+      </a>
     </h3>
 
     <section v-show="actived">
-      <img v-if="content.img" :src="`assets/img/contents/${content.id}.png`" />
       <div v-html="bbcode(content.desc)" />
+      <sub-content-box
+        v-if="content.subcontents"
+        v-for="subcontent in content.subcontents"
+        :content="subcontent"
+        :parent="content"
+      />
     </section>
   </box>
 </template>
@@ -29,7 +30,6 @@
 
 <script lang="ts">
   import { PropType } from 'vue';
-  import { Content } from 'assets/data/contents';
   export default defineComponent({
     name: 'ContentBox',
     props: {
@@ -45,13 +45,15 @@
 </script>
 
 <style lang="scss" scoped>
-  h3 {
+  :deep(h3) {
     height: 100%;
     font-size: 19px;
     letter-spacing: 2px;
-    border-bottom: 0px dashed #e3e3e3;
+    border-bottom: 1px dashed #e3e3e3;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 
-    button {
+    a {
       width: 100%;
       background: none;
       font-size: inherit;
@@ -59,13 +61,19 @@
       letter-spacing: 2px;
       text-align: left;
       padding: 0;
+      user-select: none;
     }
   }
   section {
-    img {
+    line-height: 19px;
+    :deep(img) {
       margin-bottom: 15px;
       border-radius: 3px;
       box-shadow: 2px 2px 3px #555;
+    }
+    :deep(p) {
+      line-height: 20px;
+      margin-bottom: 15px;
     }
   }
 </style>
